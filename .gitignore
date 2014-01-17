@@ -1,1 +1,7 @@
-_site
+.DS_store
+.sass-cache/
+*.scssc
+/stylesheets/.sass-cache/
+_site/
+_cache/*
+css/
