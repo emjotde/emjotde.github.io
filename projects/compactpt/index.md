@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Z box!
+title: CompactPT
 software: true
-summary: Boxes make up a small 2 column grid on larger screens and shrink to single column on smaller screens
+summary: A very small and very fast phrase table for Moses, the SMT toolkit. 
 ---
