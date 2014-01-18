@@ -37,26 +37,27 @@ iframe {
 video {
   width: 100%; }
 
-h1 {
-  font-size: 3rem; }
+  h1 {
+    font-size: 2.5rem; }
 
-h2 {
-  font-size: 2.5rem; }
+  h2 {
+    font-size: 2rem; }
 
-h3 {
-  font-size: 2rem; }
+  h3 {
+    font-size: 1.5rem; }
 
-h4 {
-  font-size: 1.5rem; }
+  h4 {
+    font-size: 1.2rem; }
 
-h5 {
-  font-size: 1.2rem; }
+  h5 {
+    font-size: 1rem; }
+
 
 h5.logo {
   font-size: 1.6rem; }
 
 h1.hero {
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 0.3em 0 0.1em; }
 
 p {
@@ -286,6 +287,7 @@ ul {
   margin: 1.5em 0 -1.7em; }
 
 #publications {
+  margin-top: 20px;
   font-size: 90%;
 }
 
@@ -311,8 +313,11 @@ ul {
 
 @media print { #publications .hide, #publications .show { display: none; } }
 
-#projects {
-  margin-top: 40px; }
+.boxes {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
 
 .project {
   display: block;
@@ -326,7 +331,7 @@ ul {
     text-decoration: none; }
 
 .project h2 {
-  font-size: 3rem; }
+  font-size: 2rem; }
 
 .project:nth-child(2n) {
   margin-right: 0; }
@@ -396,19 +401,19 @@ pre, .highlight pre, .highlight code {
     font-size: 120%; }
 
   h1 {
-    font-size: 3.5rem; }
-
-  h2 {
-    font-size: 3rem; }
-
-  h3 {
     font-size: 2.5rem; }
 
-  h4 {
+  h2 {
     font-size: 2rem; }
 
-  h5 {
+  h3 {
     font-size: 1.5rem; }
+
+  h4 {
+    font-size: 1.2rem; }
+
+  h5 {
+    font-size: 1rem; }
 
 /*h1, h2, h3, h4, h5 { font-size: 50%; } */
 
