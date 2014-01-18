@@ -15,7 +15,13 @@
 [&nbsp;<a href="publications_bib.html#junczys_mtsummit_2013">bib</a>&nbsp;| 
 <a href="http://www.mt-archive.info/10/MTS-2013-Pouliquen.pdf">.pdf</a>&nbsp;]
 <blockquote><font size="-1">
-Described is a large-scale implementation of a Moses-based machine translation system in the United Nations aiming at accelerating the work of translators. The system (called TAPTA4UN) has been trained on extensive parallel corpora in 6 languages. Both automatic and human evaluations are provided. The system is now used in production by professional translators. The technical challenges of scalability and the final evaluation by users are also described.
+Described is a large-scale implementation of a Moses-based machine
+  translation system in the United Nations aiming at accelerating the work of
+  translators. The system (called TAPTA4UN) has been trained on extensive
+  parallel corpora in 6 languages. Both automatic and human evaluations are
+  provided. The system is now used in production by professional translators.
+  The technical challenges of scalability and the final evaluation by users are
+  also described.
 </font></blockquote>
 <p>
 </dd>
@@ -32,13 +38,17 @@ Described is a large-scale implementation of a Moses-based machine translation s
 [&nbsp;<a href="publications_bib.html#junczys_mtm_2012">bib</a>&nbsp;| 
 <a href="http://ufal.mff.cuni.cz/pbml/98/art-junczys-dowmunt.pdf">.pdf</a>&nbsp;]
 <blockquote><font size="-1">
-We describe Phrasal Rank-Encoding (PR-Enc), a novel method for the compression of word-aligned target language data in phrase tables as used in phrase-based SMT. This method re-
-duces the redundancy in phrase tables which is a direct effect of the phrase-based approach.
-A combination of PR-Enc with Huffman coding allows to reduce the size of an aggressively
-compressed phrase table by another 39 percent. Using this and other methods for space reduction in a new binary phrase table implementation, a size reduction by an order of magnitude
-is achieved when comparing to the Moses on-disk phrase table implementation. Concerning decoding speed, all variants of the new phrase table are faster than the Moses binary phrase
-table implementation while the PR-Enc encoded variant outperforms all other methods.
-
+We describe Phrasal Rank-Encoding (PR-Enc), a novel method for the
+  compression of word-aligned target language data in phrase tables as used in
+  phrase-based SMT. This method reduces the redundancy in phrase tables which is
+  a direct effect of the phrase-based approach. A combination of PR-Enc with
+  Huffman coding allows to reduce the size of an aggressively compressed phrase
+  table by another 39 percent. Using this and other methods for space reduction
+  in a new binary phrase table implementation, a size reduction by an order of
+  magnitude is achieved when comparing to the Moses on-disk phrase table
+  implementation. Concerning decoding speed, all variants of the new phrase
+  table are faster than the Moses binary phrase table implementation while the
+  PR-Enc encoded variant outperforms all other methods.
 </font></blockquote>
 <p>
 </dd>
@@ -55,7 +65,18 @@ table implementation while the PR-Enc encoded variant outperforms all other meth
   Machine Translation (EAMT)</em>, pages 245-252, Trento, Italy, 2012.
 [&nbsp;<a href="publications_bib.html#junczys_eamt_2012">bib</a>&nbsp;| 
 <a href="http://www.mt-archive.info/EAMT-2012-Junczys-Dowmunt.pdf">.pdf</a>&nbsp;]
-
+<blockquote><font size="-1">
+This paper describes the first steps towards a minimum-size phrase
+  table implementation to be used for phrase-based statistical machine
+  translation. The focus lies on the size reduction of target language data in a
+  phrase table. Rank Encoding (R-Enc), a novel method for the compression of
+  word-aligned target language in phrase tables is presented. Combined with
+  Huffman coding a relative size reduction of 56 percent for target phrase words
+  and alignment data is achieved when compared to bare Huffman coding without
+  R-Enc. In the context of the complete phrase table the size reduction is 22
+  percent.
+</font></blockquote>
+<p>
 </dd>
 
 
@@ -72,7 +93,17 @@ table implementation while the PR-Enc encoded variant outperforms all other meth
   Springer, 2012.
 [&nbsp;<a href="publications_bib.html#junczys_tsd_2012b">bib</a>&nbsp;| 
 <a href="http://emjotde.github.io/publications/pdf/mjd2012tsd1.pdf">.pdf</a>&nbsp;]
-
+<blockquote><font size="-1">
+We describe the structure of a space-efficient phrase table for
+  phrase- based statistical machine translation with the Moses decoder. The new
+  phrase table can be used in-memory or be partially mapped on-disk. Compared to
+  the standard Moses on-disk phrase table implementation a size reduction by a
+  factor of 6 is achieved. The focus of this work lies on the source phrase
+  index which is implemented using minimal perfect hash functions. Two methods
+  are discussed that reduce the memory consumption of a baseline
+  implementation
+</font></blockquote>
+<p>
 </dd>
 
 
@@ -88,7 +119,18 @@ table implementation while the PR-Enc encoded variant outperforms all other meth
   Czech Republic, 2012. Springer.
 [&nbsp;<a href="publications_bib.html#junczys_tsd_2012a">bib</a>&nbsp;| 
 <a href="http://emjotde.github.io/publications/pdf/mjd2012tsd2.pdf">.pdf</a>&nbsp;]
-
+<blockquote><font size="-1">
+This paper describes an experiment in grammar engineering for a
+  shallow syntactic parser using Genetic Programming and a treebank. The goal of
+  the experiment is to improve the Parseval score of a previously manually
+  created seed grammar. We illustrate the adaptation of the Genetic Programming
+  paradigm to the problem of grammar engineering. The used genetic operators are
+  described. The performance of the evolved grammar after 1,000 generations on
+  an unseen test set is improved by 2.7 points F-score (3.7 points on the
+  training set). Despite the large number of generations no overfitting effect
+  is observed
+</font></blockquote>
+<p>
 </dd>
 
 
@@ -99,8 +141,24 @@ table implementation while the PR-Enc encoded variant outperforms all other meth
 <b>PSI-Toolkit: Natural Language Processing Pipeline</b>.
  Filip Graliński, Krzysztof Jassem, and Marcin Junczys-Dowmunt.
  <em>Computational Linguistics - Applications</em>, 458:27-39, 2012.
-[&nbsp;<a href="publications_bib.html#junczys_psi-toolkit_2012">bib</a>&nbsp;]
-
+[&nbsp;<a href="publications_bib.html#junczys_psi-toolkit_2012">bib</a>&nbsp;| 
+<a href="http://emjotde.github.io/publications/pdf/mjd2012psitoolkit.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+The paper presents the main ideas and the architecture of the open
+  source PSI-Toolkit, a set of linguistic tools being developed within a project
+  financed by the Polish Ministry of Science and Higher Education. The toolkit
+  is intended for experienced language engineers as well as casual users not
+  having any technological background. The former group of users is delivered a
+  set of libraries that may be included in their Perl, Python or Java
+  applications. The needs of the latter group should be satisfied by a user
+  friendly web interface. The main feature of the toolkit is its data structure,
+  the so-called PSI-lattice that assembles annotations delivered by all PSI
+  tools. This cohesive architecture allows the user to invoke a series of
+  processes with one command. The command has the form of a pipeline of
+  instructions resembling shell command pipelines known from Linux-based
+  system.
+</font></blockquote>
+<p>
 </dd>
 
 
