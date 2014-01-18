@@ -54,12 +54,12 @@ video {
 
 
 h5.logo {
-  font-size: 1.6rem;
-  margin-bottom: 20px; }
+  font-size: 1.6rem; }
 
 h1.hero {
   font-size: 3rem;
-  margin: 0.3em 0 0.1em; }
+  margin: 0.3em 0 0.1em;
+  margin-bottom: 20px; }
 
 p {
   line-height: 1.5em;
