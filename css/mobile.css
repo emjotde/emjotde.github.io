@@ -293,6 +293,23 @@ ul {
     font-weight: normal;
 }
 
+#publications dt { clear: both;    
+     float: left;
+     text-align: right;    
+     width: 2em;}
+#publications dd { margin-left: 3em; }
+
+#publications #abstract { display:none; }
+
+#publications .hide { display: none; }
+
+#publications .show:focus + .hide { display: inline; }
+#publications .show:focus { display: none; }
+
+#publications .show:focus ~ #abstract { display: block; } 
+
+@media print { #publications .hide, #publications .show { display: none; } }
+
 #projects {
   margin-top: 40px; }
 
