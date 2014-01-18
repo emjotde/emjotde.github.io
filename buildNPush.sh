@@ -6,6 +6,6 @@ git checkout master
 rsync -ca _site/* .
 rm -rf _site
 git add *
-git commit -a -m 'Push static pages'
+git commit -a -m 'Commit static pages'
 git push
 git checkout jekyll
