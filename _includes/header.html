@@ -27,7 +27,7 @@
         <h5 class="logo"><a href="{{site.baseurl}}">Marcin Junczys-Dowmunt</a></h5>
         <nav class="main">
             <ul>
-                {% if page.nav == "blog" %}
+                {% if page.nav == "main" %}
                     <li><a href="{{site.baseurl}}" class="active">Main</a></li>
                 {% else %}
                     <li><a href="{{site.baseurl}}">Main</a></li>
@@ -41,6 +41,11 @@
                 <li><a href="{{site.baseurl}}/projects" class="active">Projects</a></li>
                 {% else %}
                 <li><a href="{{site.baseurl}}/projects">Projects</a></li>
+                {% endif %}
+                {% if page.nav == "dydaktyka" %}
+                <li><a href="{{site.baseurl}}/dydaktyka" class="active">Dydaktyka</a></li>
+                {% else %}
+                <li><a href="{{site.baseurl}}/dydaktyka">Dydaktyka</a></li>
                 {% endif %}
             </ul>
         </nav>
