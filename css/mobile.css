@@ -65,6 +65,9 @@ p {
   line-height: 1.5em;
   margin: 1em 0; }
 
+table { margin-bottom: 20px; margin-top: 20px; }
+td { padding: 2px; }
+
 .wrapper {
   padding: 20px; }
 
