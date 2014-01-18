@@ -299,7 +299,7 @@ ul {
   margin: 1.5em 0 -1.7em; }
 
 #publications {
-  font-size: 90%;
+  font-size: 100%;
 }
 
 #publications b {
@@ -411,7 +411,7 @@ pre, .highlight pre, .highlight code {
 
 @media only screen and (min-width: 40em) {
   html {
-    font-size: 120%; }
+    font-size: 100%; }
 
   h1 {
     font-size: 2.5rem; }
