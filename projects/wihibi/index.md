@@ -2,5 +2,5 @@
 layout: default
 title: WiHiBi
 resource: true
-summary: AlignEd is a graphical word-alignment editor and display tool. Written in Perl, uses Gtk+ and Goo-Canvase for display, sqlite for data persistence.
+summary: Bitext extraction from Wikipedia Revision Histories. Tools parallel resources for a multitude of languages.
 ---

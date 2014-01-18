@@ -321,13 +321,15 @@ ul {
 
 .project {
   display: block;
+  background-color: #f3f3f3;
   border: 1px solid #cccccc;
   margin-bottom: 2.35765%;
   padding: 2.35765%;
   color: inherit; }
-  .project:hover {
-    /*border-color: #5ea5ff;*/
-    background-color: #eeeeee;
+
+.project:hover {
+    border-color: #5ea5ff;
+    background-color: #8ed5ff;;
     text-decoration: none; }
 
 .project h2 {
