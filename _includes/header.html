@@ -23,23 +23,23 @@
                 <noscript><img src="{% include avatar_url %}?s=54" alt="avatar"></noscript>
             </div>
         </div>
-        <h5 class="logo"><a href="{{ site.url }}">Marcin Junczys-Dowmunt</a></h5>
+        <h5 class="logo"><a href="{{ site.baseurl }}">Marcin Junczys-Dowmunt</a></h5>
         <nav class="main">
             <ul>
                 {% if page.nav == "blog" %}
-                    <li><a href="{{ site.url }}" class="active">Blog</a></li>
+                    <li><a href="{{ site.baseurl }}" class="active">Blog</a></li>
                 {% else %}
-                    <li><a href="{{ site.url }}">Blog</a></li>
+                    <li><a href="{{ site.baseurl }}">Blog</a></li>
                 {% endif %}
                 {% if page.nav == "about" %}
-                <li><a href="{{ site.url }}/about" class="active">About</a></li>
+                <li><a href="{{ site.baseurl }}/about" class="active">About</a></li>
                 {% else %}
-                <li><a href="{{ site.url }}/about">About</a></li>
+                <li><a href="{{ site.baseurl }}/about">About</a></li>
                 {% endif %}
                 {% if page.nav == "projects" %}
-                <li><a href="{{ site.url }}/projects" class="active">Projects</a></li>
+                <li><a href="{{ site.baseurl }}/projects" class="active">Projects</a></li>
                 {% else %}
-                <li><a href="{{ site.url }}/projects">Projects</a></li>
+                <li><a href="{{ site.baseurl }}/projects">Projects</a></li>
                 {% endif %}
             </ul>
         </nav>
