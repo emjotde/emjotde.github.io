@@ -33,8 +33,8 @@ module Jekyll
   end
 
   class BibtexTag < Liquid::Tag
-    # The options that are passed to bibtex2html
-    Options = "-nofooter -noheader -nokeywords -nokeys -nodoc -dl"
+    # The options that are passed to bibtex2html -nokeys -dl
+    Options = "-nofooter -noheader -nokeywords -nodoc -dl"
 
     def split_params(params)
       params.split(" ").map(&:strip)
@@ -92,6 +92,23 @@ module Jekyll
               # commit changes
               File.open(bibhtml, 'w') {|f| f.write(content_bibhtml)}
           end
+
+          if File.exists?(outname)
+              # Read html formatted bib file
+              content_out = IO.read(outname)
+              # determine the name of the file we are generating
+              abstract_orig = "]\n<blockquote>"
+              abstract_new = "| 
+              <a href=\"#\" class=\"show\"> show abstract </a> 
+              <a href=\"#\" class=\"hide\"> hide abstract </a> 
+              ]
+              <blockquote id=\"abstract\">"
+
+              content_out = content_out.gsub(abstract_orig, abstract_new)
+              # commit changes
+              File.open(outname, 'w') {|f| f.write(content_out)}
+          end
+
 
           # return the produced output
           IO.read(outname)
