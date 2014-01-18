@@ -1,0 +1,29 @@
+---
+title: Dydaktyka
+nav: dydaktyka
+layout: default
+---
+
+<h2>2013/2014</h2>
+<div class="boxes">
+  {% for page in site.pages %}
+    {% if page.dydaktyka == true and page.rok = "2013/2014" %}
+      {% if page.link %}
+        <a class="project" href="{{ page.link }}">
+      {% else %}
+        <a class="project" href="{{ page.url | replace: '/index.html', '' }}">
+      {% endif %}
+          <div class="project-header">
+              <h2>
+                  {{ page.title }}
+              </h2>
+          </div>
+          <div class="project-body">
+            <p>
+                {{ page.summary }}
+            </p>
+          </div>
+        </a>
+    {% endif %}
+  {% endfor %}
+</div>
