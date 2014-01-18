@@ -3,9 +3,9 @@
 jekyll build
 git commit -a -m 'Commit local changes to Jekyll sources'
 git checkout master
-rsync -a _site/* .
+rsync -ca _site/* .
 rm -rf _site
 git add *
-git commit -ca -m 'Push static pages'
+git commit -a -m 'Push static pages'
 git push
 git checkout jekyll
