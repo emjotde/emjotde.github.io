@@ -298,7 +298,7 @@ ul {
      text-align: right;    
      width: 2em;}
 
-#publications dd { margin-left: 3em; }
+#publications dd { margin-left: 3em; margin-bottem: 1em; }
 
 #publications #abstract { display:none; font-size: 85%; }
 
