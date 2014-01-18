@@ -4,7 +4,4 @@ nav: publications
 title: Publications
 ---
 
-2014
-----
-* This is a test {{site.baseurl}}
-* this is another test
+{% bibtex _plugins/style.bst bibtex_file.bib %}
