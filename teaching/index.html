@@ -7,7 +7,7 @@ layout: default
 <h2>2013/2014</h2>
 <div class="boxes">
   {% for page in site.pages %}
-    {% if page.dydaktyka == true and page.rok = "2013/2014" %}
+    {% if page.dydaktyka == true and page.rok == "2013/2014" %}
       {% if page.link %}
         <a class="project" href="{{ page.link }}">
       {% else %}
