@@ -1,6 +1,7 @@
 #!/bin/bash -v
 
 jekyll build
+git commit -a -m 'Commit local changes to Jekyll sources'
 git checkout master
 rsync -a _site/* .
 rm -rf _site

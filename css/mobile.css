@@ -285,6 +285,10 @@ ul {
   text-decoration: lowercase;
   margin: 1.5em 0 -1.7em; }
 
+#publications {
+  font-size: 80%;
+}
+
 #projects {
   margin-top: 40px; }
 
