@@ -56,7 +56,7 @@ h5.logo {
   font-size: 1.6rem; }
 
 h1.hero {
-  font-size: 4.5rem;
+  font-size: 4rem;
   margin: 0.3em 0 0.1em; }
 
 p {
@@ -136,8 +136,8 @@ header .nav-selection {
   -o-transition-timing-function: compact(linear, false, false, false, false, false, false, false, false);
   transition-timing-function: compact(linear, false, false, false, false, false, false, false, false); }
 
-header .nav-selection.about {
-  width: 44px;
+header .nav-selection.publications {
+  width: 85px;
   -webkit-transform: translateX(51px);
   -moz-transform: translateX(51px);
   -ms-transform: translateX(51px);
@@ -154,11 +154,11 @@ header .nav-selection.blog {
 
 header .nav-selection.projects {
   width: 59px;
-  -webkit-transform: translateX(114px);
-  -moz-transform: translateX(114px);
-  -ms-transform: translateX(114px);
-  -o-transform: translateX(114px);
-  transform: translateX(114px); }
+  -webkit-transform: translateX(155px);
+  -moz-transform: translateX(155px);
+  -ms-transform: translateX(155px);
+  -o-transform: translateX(155px);
+  transform: translateX(155px); }
 
 header .subnav-selection {
   position: absolute;
@@ -295,7 +295,8 @@ ul {
   padding: 2.35765%;
   color: inherit; }
   .project:hover {
-    border-color: #5ea5ff;
+    /*border-color: #5ea5ff;*/
+    background-color: #eeeeee;
     text-decoration: none; }
 
 .project h2 {
@@ -366,22 +367,24 @@ pre, .highlight pre, .highlight code {
 
 @media only screen and (min-width: 40em) {
   html {
-    font-size: 22px; }
+    font-size: 120%; }
 
   h1 {
-    font-size: 4rem; }
-
-  h2 {
     font-size: 3.5rem; }
 
-  h3 {
+  h2 {
     font-size: 3rem; }
 
-  h4 {
+  h3 {
     font-size: 2.5rem; }
 
-  h5 {
+  h4 {
     font-size: 2rem; }
+
+  h5 {
+    font-size: 1.5rem; }
+
+/*h1, h2, h3, h4, h5 { font-size: 50%; } */
 
   .project {
     display: block;

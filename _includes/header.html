@@ -31,10 +31,10 @@
                 {% else %}
                     <li><a href="{{site.baseurl}}">Blog</a></li>
                 {% endif %}
-                {% if page.nav == "about" %}
-                <li><a href="{{site.baseurl}}/about" class="active">About</a></li>
+                {% if page.nav == "publications" %}
+                <li><a href="{{site.baseurl}}/publications" class="active">Publications</a></li>
                 {% else %}
-                <li><a href="{{site.baseurl}}/about">About</a></li>
+                <li><a href="{{site.baseurl}}/publications">Publications</a></li>
                 {% endif %}
                 {% if page.nav == "projects" %}
                 <li><a href="{{site.baseurl}}/projects" class="active">Projects</a></li>
@@ -46,7 +46,7 @@
         <div class="nav-slider">
             <div class="nav-selection {{ page.nav }}"></div>
         </div>
-        <div class="subnav-slider">
+        <!--div class="subnav-slider">
             <div class="subnav-selection {{ page.subnav }}"></div>
         </div>
         <nav class="subnav">
@@ -67,6 +67,6 @@
                     <li><a href="https://github.com/tybenz/exemplar/archive/master.zip" data-subnav="download">Download</a></li>
                 {% endif %}
             </ul>
-        </nav>
+        </nav-->
     </div>
 </header>
