@@ -42,6 +42,11 @@
                 {% else %}
                 <li><a href="{{site.baseurl}}/projects">Projects</a></li>
                 {% endif %}
+                {% if page.nav == "dydaktyka" %}
+                <li><a href="{{site.baseurl}}/dydaktyka" class="active">Dydaktyka</a></li>
+                {% else %}
+                <li><a href="{{site.baseurl}}/dydaktyka">Dydaktyka</a></li>
+                {% endif %}
             </ul>
         </nav>
         <div class="nav-slider">
