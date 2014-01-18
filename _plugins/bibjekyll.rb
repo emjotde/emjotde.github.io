@@ -107,7 +107,7 @@ module Jekyll
               content_out = content_out.gsub(abstract_orig, abstract_new)
               content_out = content_out.gsub("<font size=\"-1\">", "")
               content_out = content_out.gsub("</font>", "")
-              content_out = content_out.gsub("<p>\n</p></dd>", "</dd>")
+              content_out = content_out.gsub("<p>\n</p>", "")
 
               # commit changes
               File.open(outname, 'w') {|f| f.write(content_out)}
