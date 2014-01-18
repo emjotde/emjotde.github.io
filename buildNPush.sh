@@ -1,7 +1,6 @@
 #!/bin/bash -v
 
-git pull
-git checkout jekyll
+git commit -a -m 'Commit local changes to Jekyll sources'
 jekyll build
 git checkout master
 rsync -a _site/* .
