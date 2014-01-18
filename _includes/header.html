@@ -23,23 +23,23 @@
                 <noscript><img src="{% include avatar_url %}?s=54" alt="avatar"></noscript>
             </div>
         </div>
-        <h5 class="logo"><a href="http://tybenz.com">Tyler Benziger</a></h5>
+        <h5 class="logo"><a href="{{site.baseurl}}">Marcin Junczys-Dowmunt</a></h5>
         <nav class="main">
             <ul>
                 {% if page.nav == "blog" %}
-                    <li><a href="http://tybenz.com" class="active">Blog</a></li>
+                    <li><a href="{{site.baseurl}}" class="active">Blog</a></li>
                 {% else %}
-                    <li><a href="http://tybenz.com">Blog</a></li>
+                    <li><a href="{{site.baseurl}}">Blog</a></li>
                 {% endif %}
                 {% if page.nav == "about" %}
-                <li><a href="http://tybenz.com/about" class="active">About</a></li>
+                <li><a href="{{site.baseurl}}/about" class="active">About</a></li>
                 {% else %}
-                <li><a href="http://tybenz.com/about">About</a></li>
+                <li><a href="{{site.baseurl}}/about">About</a></li>
                 {% endif %}
                 {% if page.nav == "projects" %}
-                <li><a href="http://tybenz.com/projects" class="active">Projects</a></li>
+                <li><a href="{{site.baseurl}}/projects" class="active">Projects</a></li>
                 {% else %}
-                <li><a href="http://tybenz.com/projects">Projects</a></li>
+                <li><a href="{{site.baseurl}}/projects">Projects</a></li>
                 {% endif %}
             </ul>
         </nav>
@@ -57,9 +57,9 @@
                     <li><a href="/exemplar" data-subnav="exemplar-home">Home</a></li>
                 {% endif %}
                 {% if page.subnav == "exemplar-docs" %}
-                    <li><a href="/exemplar/docs" class="active" data-subnav="exemplar-docs">Docs</a></li>
+                    <li><a href="/docs" class="active" data-subnav="exemplar-docs">Docs</a></li>
                 {% else %}
-                    <li><a href="/exemplar/docs" data-subnav="exemplar-docs">Docs</a></li>
+                    <li><a href="/docs" data-subnav="exemplar-docs">Docs</a></li>
                 {% endif %}
                 {% if page.subnav == "download" %}
                     <li><a href="https://github.com/tybenz/exemplar/archive/master.zip" class="active" data-subnav="download">Download</a></li>
