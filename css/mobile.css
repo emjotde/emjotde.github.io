@@ -37,27 +37,29 @@ iframe {
 video {
   width: 100%; }
 
-h1 {
-  font-size: 3rem; }
+  h1 {
+    font-size: 2.5rem; }
 
-h2 {
-  font-size: 2.5rem; }
+  h2 {
+    font-size: 2rem; }
 
-h3 {
-  font-size: 2rem; }
+  h3 {
+    font-size: 1.5rem; }
 
-h4 {
-  font-size: 1.5rem; }
+  h4 {
+    font-size: 1.2rem; }
 
-h5 {
-  font-size: 1.2rem; }
+  h5 {
+    font-size: 1rem; }
+
 
 h5.logo {
   font-size: 1.6rem; }
 
 h1.hero {
-  font-size: 4rem;
-  margin: 0.3em 0 0.1em; }
+  font-size: 3rem;
+  margin: 0.3em 0 0.1em;
+  margin-bottom: 20px; }
 
 p {
   line-height: 1.5em;
@@ -286,7 +288,7 @@ ul {
   margin: 1.5em 0 -1.7em; }
 
 #publications {
-  font-size: 80%;
+  font-size: 90%;
 }
 
 #publications b {
@@ -297,9 +299,10 @@ ul {
      float: left;
      text-align: right;    
      width: 2em;}
-#publications dd { margin-left: 3em; }
 
-#publications #abstract { display:none; }
+#publications dd { margin-left: 3em; margin-bottom: 0.3em; }
+
+#publications #abstract { display:none; font-size: 85%; }
 
 #publications .hide { display: none; }
 
@@ -310,22 +313,27 @@ ul {
 
 @media print { #publications .hide, #publications .show { display: none; } }
 
-#projects {
-  margin-top: 40px; }
+.boxes {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
 
 .project {
   display: block;
+  background-color: #f3f3f3;
   border: 1px solid #cccccc;
   margin-bottom: 2.35765%;
   padding: 2.35765%;
   color: inherit; }
-  .project:hover {
-    /*border-color: #5ea5ff;*/
-    background-color: #eeeeee;
+
+.project:hover {
+    border-color: #5ea5ff;
+    background-color: #dee5ff;;
     text-decoration: none; }
 
 .project h2 {
-  font-size: 3rem; }
+  font-size: 2rem; }
 
 .project:nth-child(2n) {
   margin-right: 0; }
@@ -395,19 +403,19 @@ pre, .highlight pre, .highlight code {
     font-size: 120%; }
 
   h1 {
-    font-size: 3.5rem; }
-
-  h2 {
-    font-size: 3rem; }
-
-  h3 {
     font-size: 2.5rem; }
 
-  h4 {
+  h2 {
     font-size: 2rem; }
 
-  h5 {
+  h3 {
     font-size: 1.5rem; }
+
+  h4 {
+    font-size: 1.2rem; }
+
+  h5 {
+    font-size: 1rem; }
 
 /*h1, h2, h3, h4, h5 { font-size: 50%; } */
 
