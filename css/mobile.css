@@ -297,9 +297,10 @@ ul {
      float: left;
      text-align: right;    
      width: 2em;}
+
 #publications dd { margin-left: 3em; }
 
-#publications #abstract { display:none; }
+#publications #abstract { display:none; font-size: 80%; }
 
 #publications .hide { display: none; }
 
