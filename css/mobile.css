@@ -62,7 +62,6 @@ h1.hero {
   margin-bottom: 20px; }
 
 p {
-  line-height: 1.5em;
   margin: 1em 0; }
 
 table { margin-bottom: 20px; margin-top: 20px; }
@@ -279,12 +278,13 @@ footer nav ul li {
         margin-right: 0; } }
 
 ul, ol {
-  line-height: 1.5em;
   padding-left: 20px;
   font-size: 1rem; }
 
 ul {
   list-style: square; }
+
+li { margin-top: 5px; margin-bottom: 5px; }
 
 .post {
   border-top: 1px solid #cccccc;
