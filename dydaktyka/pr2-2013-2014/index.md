@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Programowanie 2 2013/2014
+title: Prog-2 2013/2014
 dydaktyka: true
 rok: 2013/2014
 nav: dydaktyka
