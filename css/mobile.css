@@ -157,7 +157,7 @@ header .nav-selection.about {
   transform: translateX(0); }
 
 header .nav-selection.dydaktyka {
-  width: 75px;
+  width: 78px;
   -webkit-transform: translateX(250px);
   -moz-transform: translateX(250px);
   -ms-transform: translateX(250px);
@@ -165,7 +165,7 @@ header .nav-selection.dydaktyka {
   transform: translateX(250px); }
 
 header .nav-selection.projects {
-  width: 59px;
+  width: 62px;
   -webkit-transform: translateX(171px);
   -moz-transform: translateX(171px);
   -ms-transform: translateX(171px);
