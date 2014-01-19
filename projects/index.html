@@ -4,7 +4,7 @@ nav: projects
 layout: default
 ---
 
-<h2> Open-source NLP software </h2>
+<h1> Open-source NLP software </h1>
 <div class="boxes">
   {% for page in site.pages %}
     {% if page.software == true %}
@@ -28,7 +28,7 @@ layout: default
   {% endfor %}
 </div>
 
-<h2> Machine translation resources </h2>
+<h1> Machine translation resources </h1>
 <div class="boxes">
   {% for page in site.pages %}
     {% if page.resource == true %}
@@ -38,9 +38,9 @@ layout: default
         <a class="project" href="{{ page.url | replace: '/index.html', '' }}">
       {% endif %}
           <div class="project-header">
-              <h2>
+              <h1>
                   {{ page.title }}
-              </h2>
+              </h1>
           </div>
           <div class="project-body">
             <p>
