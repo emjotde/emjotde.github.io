@@ -142,11 +142,11 @@ header .nav-selection {
 
 header .nav-selection.publications {
   width: 87px;
-  -webkit-transform: translateX(66px);
-  -moz-transform: translateX(66px);
-  -ms-transform: translateX(66px);
-  -o-transform: translateX(66px);
-  transform: translateX(66px); }
+  -webkit-transform: translateX(63px);
+  -moz-transform: translateX(63px);
+  -ms-transform: translateX(63px);
+  -o-transform: translateX(63px);
+  transform: translateX(63px); }
 
 header .nav-selection.about {
   width: 45px;
@@ -165,12 +165,12 @@ header .nav-selection.dydaktyka {
   transform: translateX(250px); }
 
 header .nav-selection.projects {
-  width: 62px;
-  -webkit-transform: translateX(171px);
-  -moz-transform: translateX(171px);
-  -ms-transform: translateX(171px);
-  -o-transform: translateX(171px);
-  transform: translateX(171px); }
+  width: 59px;
+  -webkit-transform: translateX(168px);
+  -moz-transform: translateX(168px);
+  -ms-transform: translateX(168px);
+  -o-transform: translateX(168px);
+  transform: translateX(168px); }
 
 header .subnav-selection {
   position: absolute;
