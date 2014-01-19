@@ -13,7 +13,8 @@ html {
   font-size: 16px; }
 
 a {
-  color: #5ea5ff;
+  color: #a00;
+  /*color: #5ea5ff;*/
   text-decoration: none; }
 
 a:hover {
@@ -123,7 +124,8 @@ header .nav-slider {
 header .nav-selection {
   position: absolute;
   height: 3px;
-  background-color: #6ec5ff;
+  background-color: #f00;
+  /*background-color: #6ec5ff;*/
   -webkit-transition-property: compact(transform, false, false, false, false, false, false, false, false);
   -moz-transition-property: compact(transform, false, false, false, false, false, false, false, false);
   -ms-transition-property: compact(transform, false, false, false, false, false, false, false, false);
@@ -332,15 +334,17 @@ li { margin-top: 5px; margin-bottom: 5px; }
 
 .project {
   display: block;
-  background-color: #f3f3f3;
+  background-color: #f9f9f9;
   border: 1px solid #cccccc;
   margin-bottom: 2.35765%;
   padding: 2.35765%;
   color: inherit; }
 
 .project:hover {
-    border-color: #5ea5ff;
-    background-color: #dee5ff;;
+/*    border-color: #5ea5ff;
+    background-color: #dee5ff;; */
+    border-color: #a00;
+    background-color: #fff9f9;
     text-decoration: none; }
 
 .project h2 {
