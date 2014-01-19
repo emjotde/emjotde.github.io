@@ -142,14 +142,14 @@ header .nav-selection {
 
 header .nav-selection.publications {
   width: 87px;
-  -webkit-transform: translateX(54px);
-  -moz-transform: translateX(54px);
-  -ms-transform: translateX(54px);
-  -o-transform: translateX(54px);
-  transform: translateX(54px); }
+  -webkit-transform: translateX(66px);
+  -moz-transform: translateX(66px);
+  -ms-transform: translateX(66px);
+  -o-transform: translateX(66px);
+  transform: translateX(66px); }
 
-header .nav-selection.main {
-  width: 37px;
+header .nav-selection.about {
+  width: 45px;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -158,19 +158,19 @@ header .nav-selection.main {
 
 header .nav-selection.dydaktyka {
   width: 75px;
-  -webkit-transform: translateX(238px);
-  -moz-transform: translateX(238px);
-  -ms-transform: translateX(238px);
-  -o-transform: translateX(238px);
-  transform: translateX(238px); }
+  -webkit-transform: translateX(250px);
+  -moz-transform: translateX(250px);
+  -ms-transform: translateX(250px);
+  -o-transform: translateX(250px);
+  transform: translateX(250px); }
 
 header .nav-selection.projects {
   width: 59px;
-  -webkit-transform: translateX(160px);
-  -moz-transform: translateX(160px);
-  -ms-transform: translateX(160px);
-  -o-transform: translateX(160px);
-  transform: translateX(160px); }
+  -webkit-transform: translateX(171px);
+  -moz-transform: translateX(171px);
+  -ms-transform: translateX(171px);
+  -o-transform: translateX(171px);
+  transform: translateX(171px); }
 
 header .subnav-selection {
   position: absolute;

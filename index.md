@@ -1,6 +1,6 @@
 ---
-title: Main
-nav: main
+title: About
+nav: about
 layout: default
 ---
 
