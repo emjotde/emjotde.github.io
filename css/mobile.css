@@ -158,11 +158,11 @@ header .nav-selection.about {
 
 header .nav-selection.dydaktyka {
   width: 78px;
-  -webkit-transform: translateX(250px);
-  -moz-transform: translateX(250px);
-  -ms-transform: translateX(250px);
-  -o-transform: translateX(250px);
-  transform: translateX(250px); }
+  -webkit-transform: translateX(246px);
+  -moz-transform: translateX(246px);
+  -ms-transform: translateX(246px);
+  -o-transform: translateX(246px);
+  transform: translateX(246px); }
 
 header .nav-selection.projects {
   width: 59px;
