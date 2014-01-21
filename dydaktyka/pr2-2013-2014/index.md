@@ -7,6 +7,9 @@ nav: dydaktyka
 summary: Programowanie 2, ćwiczenia - Kognitywistyka, 4. rok, magisterskie
 ---
 
+Wyniki pierwszegp kolokwium: ...
+Wyniki drugiego kolokwium: ...
+
 Drugie Kolokwium
 ================
 
