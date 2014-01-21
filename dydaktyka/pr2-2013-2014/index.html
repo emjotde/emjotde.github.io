@@ -92,7 +92,57 @@
     <section id="main">
         <article class="container">
           <h1 class="hero">Prog-2 2013/2014</h1>
+          <h1 id="drugie_kolokwium">Drugie Kolokwium</h1>
+
+<h2 id="task_1">Task 1</h2>
+
+<p>Given an array of integers nums and an integer n, return an array that is a version of nums shifted n positions to the right.</p>
+
+<h3 id="solution">Solution</h3>
+<div class='highlight'><pre><code class='java'><span class='kt'>int</span><span class='o'>[]</span> <span class='nf'>shiftN</span><span class='o'>(</span><span class='kt'>int</span><span class='o'>[]</span> <span class='n'>nums</span><span class='o'>,</span> <span class='kt'>int</span> <span class='n'>n</span><span class='o'>)</span> <span class='o'>{</span>
+    <span class='kt'>int</span><span class='o'>[]</span> <span class='n'>shifted</span> <span class='o'>=</span> <span class='k'>new</span> <span class='kt'>int</span><span class='o'>[</span><span class='n'>nums</span><span class='o'>.</span><span class='na'>length</span><span class='o'>];</span>
+    <span class='k'>for</span><span class='o'>(</span><span class='kt'>int</span> <span class='n'>i</span> <span class='o'>=</span> <span class='mi'>0</span><span class='o'>;</span> <span class='n'>i</span> <span class='o'>&lt;</span> <span class='n'>nums</span><span class='o'>.</span><span class='na'>length</span><span class='o'>;</span> <span class='n'>i</span><span class='o'>++)</span>
+        <span class='n'>shifted</span><span class='o'>[(</span><span class='n'>i</span> <span class='o'>+</span> <span class='n'>n</span><span class='o'>)</span> <span class='o'>%</span> <span class='n'>nums</span><span class='o'>.</span><span class='na'>length</span><span class='o'>]</span> <span class='o'>=</span> <span class='n'>nums</span><span class='o'>[</span><span class='n'>i</span><span class='o'>];</span>
+    <span class='k'>return</span> <span class='n'>shifted</span><span class='o'>;</span>
+<span class='o'>}</span>
+</code></pre></div>
+<h2 id="task_2">Task 2</h2>
+
+<p>Given a string str, return a new string in which all characters at odd positions appear in reverse order, all characters at even positions remain in their place. Treat 0 as an even position.</p>
+
+<h3 id="solution_2">Solution</h3>
+<div class='highlight'><pre><code class='java'><span class='n'>String</span> <span class='nf'>evenReverse</span><span class='o'>(</span><span class='n'>String</span> <span class='n'>str</span><span class='o'>)</span> <span class='o'>{</span>
+    <span class='n'>String</span> <span class='n'>result</span><span class='o'>;</span>
+    <span class='k'>for</span><span class='o'>(</span><span class='kt'>int</span> <span class='n'>i</span> <span class='o'>=</span> <span class='mi'>0</span><span class='o'>;</span> <span class='n'>i</span> <span class='o'>&lt;</span> <span class='n'>str</span><span class='o'>.</span><span class='na'>length</span><span class='o'>();</span> <span class='n'>i</span><span class='o'>++)</span> <span class='o'>{</span>
+        <span class='kt'>int</span> <span class='n'>j</span> <span class='o'>=</span> <span class='n'>i</span><span class='o'>;</span>
+        <span class='k'>if</span><span class='o'>(</span><span class='n'>i</span> <span class='o'>%</span> <span class='mi'>2</span> <span class='o'>==</span> <span class='mi'>1</span><span class='o'>)</span>
+            <span class='n'>j</span> <span class='o'>=</span> <span class='n'>str</span><span class='o'>.</span><span class='na'>length</span><span class='o'>()</span> <span class='o'>-</span> <span class='n'>i</span> <span class='o'>-</span> <span class='n'>str</span><span class='o'>.</span><span class='na'>length</span><span class='o'>()%</span><span class='mi'>2</span><span class='o'>;</span>
+        <span class='n'>result</span> <span class='o'>+=</span> <span class='n'>str</span><span class='o'>.</span><span class='na'>charAt</span><span class='o'>(</span><span class='n'>j</span><span class='o'>);</span>
+    <span class='o'>}</span>
+    <span class='k'>return</span> <span class='n'>result</span><span class='o'>;</span>
+<span class='o'>}</span>
+</code></pre></div>
+<h2 id="task_3">Task 3</h2>
+
+<p>Given a string str, check whether the parentheses in the string are correctly balanced. That means for every opening parenthesis there exists a closed parenthesis that occurs later in the string and for every closing parenthesis there exists an opening parenthesis earlier in the string.</p>
+
+<p>Hint: Maintain a counter that is increased for every opening parenthesis and decreased for every closing parenthesis. What is the value of this counter at the end for a correctly balanced expression? What are allowed values of the counter while analyzing the expression?</p>
+
+<h3 id="solution_3">Solution</h3>
+<div class='highlight'><pre><code class='java'><span class='kt'>boolean</span> <span class='nf'>balancedPars</span><span class='o'>(</span><span class='n'>String</span> <span class='n'>str</span><span class='o'>)</span> <span class='o'>{</span>
+    <span class='kt'>int</span> <span class='n'>check</span> <span class='o'>=</span> <span class='mi'>0</span><span class='o'>;</span>
+    <span class='k'>for</span><span class='o'>(</span><span class='kt'>int</span> <span class='n'>i</span> <span class='o'>=</span> <span class='mi'>0</span><span class='o'>;</span> <span class='n'>i</span> <span class='o'>&lt;</span> <span class='n'>str</span><span class='o'>.</span><span class='na'>length</span><span class='o'>();</span> <span class='n'>i</span><span class='o'>++)</span> <span class='o'>{</span>
+        <span class='k'>if</span><span class='o'>(</span><span class='n'>str</span><span class='o'>.</span><span class='na'>charAt</span><span class='o'>(</span><span class='n'>i</span><span class='o'>)</span> <span class='o'>==</span> <span class='sc'>&#39;(&#39;</span><span class='o'>)</span>
+            <span class='n'>check</span><span class='o'>++;</span>
+        <span class='k'>if</span><span class='o'>(</span><span class='n'>std</span><span class='o'>.</span><span class='na'>charAt</span><span class='o'>(</span><span class='n'>i</span><span class='o'>)</span> <span class='o'>==</span> <span class='sc'>&#39;)&#39;</span><span class='o'>)</span>
+            <span class='n'>check</span><span class='o'>--;</span>
           
+        <span class='k'>if</span><span class='o'>(</span><span class='n'>check</span> <span class='o'>&lt;</span> <span class='mi'>0</span><span class='o'>)</span>
+            <span class='k'>return</span> <span class='kc'>false</span><span class='o'>;</span>
+    <span class='o'>}</span>
+    <span class='k'>return</span> <span class='n'>check</span> <span class='o'>==</span> <span class='mi'>0</span><span class='o'>;</span>
+<span class='o'>}</span>
+</code></pre></div>
         </article>
     </section>
 
