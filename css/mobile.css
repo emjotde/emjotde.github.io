@@ -421,8 +421,8 @@ li { margin-top: 5px; margin-bottom: 5px; }
 
 pre, .highlight pre, .highlight code {
   font-family: monospace;
-  overflow: scroll;
-  padding:2px 5px 3px;
+  overflow: auto;
+  padding:2.5%;
   background-color: #f3f3f3;
   font-size:14px;
   border:1px solid #eee;
