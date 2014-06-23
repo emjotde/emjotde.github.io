@@ -6,11 +6,7 @@ nav: projects
 summary: Symmetrized word alignment models. On average results in better alignment quality than MGIZA++.
 ---
 
-
-SyMGIZA++ 
-=========
-
-Download from [https://github.com/emjotde/symgiza-pp]
+Download from [github](https://github.com/emjotde/symgiza-pp)
 
 SyMGIZA++ is a tool based on GIZA++ and MGIZA++. It extends the algorithms employed in both programs with a symmetrization mechanism, i.e. two directed word alignment models are trained in parallel and parameters of both models can be used between iterations to compute the parameters of the next model. We were able to show that this information interchange between models tends to improve word alignment quality directly and translation quality indirectly. 
 
