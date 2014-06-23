@@ -10,7 +10,7 @@ summary: Symmetrized word alignment models. On average results in better alignme
 SyMGIZA++ 
 =========
 
-Download from https://github.com/emjotde/symgiza-pp
+Download from [https://github.com/emjotde/symgiza-pp]
 
 SyMGIZA++ is a tool based on GIZA++ and MGIZA++. It extends the algorithms employed in both programs with a symmetrization mechanism, i.e. two directed word alignment models are trained in parallel and parameters of both models can be used between iterations to compute the parameters of the next model. We were able to show that this information interchange between models tends to improve word alignment quality directly and translation quality indirectly. 
 
@@ -20,7 +20,7 @@ The main features of SyMGIZA++ are:
 
 If you use this, please cite:
 
-__SyMGiza++: Symmetrized Word Alignment Models for Machine Translation.__ Marcin Junczys-Dowmunt and Arkadiusz Szał. In Pascal Bouvry, Mieczyslaw A. Klopotek, Franck Leprévost, Malgorzata Marciniak, Agnieszka Mykowiecka, and Henryk Rybinski, editors, Security and Intelligent Information Systems (SIIS), volume 7053 of Lecture Notes in Computer Science, pages 379-390, Warsaw, Poland, 2011. Springer. http://emjotde.github.io/publications/pdf/mjd2011siis.pdf
+__SyMGiza++: Symmetrized Word Alignment Models for Machine Translation.__ Marcin Junczys-Dowmunt and Arkadiusz Szał. In Pascal Bouvry, Mieczyslaw A. Klopotek, Franck Leprévost, Malgorzata Marciniak, Agnieszka Mykowiecka, and Henryk Rybinski, editors, Security and Intelligent Information Systems (SIIS), volume 7053 of Lecture Notes in Computer Science, pages 379-390, Warsaw, Poland, 2011. Springer. [http://emjotde.github.io/publications/pdf/mjd2011siis.pdf]
 
     @inproceedings{junczys_siis_2011,
       author = {Marcin Junczys-Dowmunt and Arkadiusz Szał},
