@@ -428,6 +428,7 @@ pre, .highlight pre, .highlight code {
   border:1px solid #eee;
   border-radius:3px;
   white-space: pre;
+  font-weight: 200;
 }
 
 .chords {
