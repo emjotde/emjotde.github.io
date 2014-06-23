@@ -420,7 +420,13 @@ li { margin-top: 5px; margin-bottom: 5px; }
   left: 2.8rem; }
 
 pre, .highlight pre, .highlight code {
-  padding:2px 5px 3px;background:#fff;font-size:14px;border:1px solid #eee;border-radius:3px
+  font-family: monospace;
+  overflow: scroll;
+  padding:2px 5px 3px;
+  background:#fff;
+  font-size:14px;
+  border:1px solid #eee;
+  border-radius:3px
   
  // font-family: "Ubuntu Mono", monospace;
  // font-weight: normal;
