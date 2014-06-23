@@ -423,16 +423,11 @@ pre, .highlight pre, .highlight code {
   font-family: monospace;
   overflow: scroll;
   padding:2px 5px 3px;
-  background:#fff;
+  background-color: #f3f3f3;
   font-size:14px;
   border:1px solid #eee;
   border-radius:3px;
-  white-space: nowrap;
-  
- // font-family: "Ubuntu Mono", monospace;
- // font-weight: normal;
-//  font-size: 1rem;
-//  line-height: 1.3em;
+  white-space: pre;
 }
 
 .chords {
