@@ -11,8 +11,8 @@ __Clone from [https://github.com/emjotde/symgiza-pp](https://github.com/emjotde/
 SyMGIZA++ is a tool based on GIZA++ and MGIZA++. It extends the algorithms employed in both programs with a symmetrization mechanism, i.e. two directed word alignment models are trained in parallel and parameters of both models can be used between iterations to compute the parameters of the next model. We were able to show that this information interchange between models tends to improve word alignment quality directly and translation quality indirectly. 
 
 The main features of SyMGIZA++ are:
-* the symmetrization mechanism,
-* multi-threading - SyMGIZA++ inherits the multithreading capacities of MGIZA++, the two directed models are trained simultanously.
+ * the symmetrization mechanism,
+ * multi-threading - SyMGIZA++ inherits the multithreading capacities of MGIZA++, the two directed models are trained simultanously.
 
 If you use this, please cite:
 
