@@ -16,13 +16,13 @@ The main features of SyMGIZA++ are:
 
 If you use this, please cite:
 
-[__SyMGiza++: Symmetrized Word Alignment Models for Machine Translation.__](http://emjotde.github.io/publications/pdf/mjd2011siis.pdf) Marcin Junczys-Dowmunt and Arkadiusz Szał. In Pascal Bouvry, Mieczyslaw A. Klopotek, Franck Leprévost, Malgorzata Marciniak, Agnieszka Mykowiecka, and Henryk Rybinski, editors, Security and Intelligent Information Systems (SIIS), volume 7053 of Lecture Notes in Computer Science, pages 379-390, Warsaw, Poland, 2011. Springer.
+[__SyMGiza++: Symmetrized Word Alignment Models for Machine Translation.__](http://emjotde.github.io/publications/pdf/mjd2011siis.pdf) Marcin Junczys-Dowmunt and Arkadiusz Szał. In Pascal Bouvry, Mieczyslaw A. Klopotek, Franck Leprévost, Malgorzata Marciniak, Agnieszka Mykowiecka, and Henryk Rybinski, editors, Security and Intelligent Information Systems (SIIS), volume 7053 of Lecture Notes in Computer Science, pages 379-390, Warsaw, Poland, 2012. Springer.
 
-    @inproceedings{junczys_siis_2011,
+    @inproceedings{junczys_siis_2012,
       author = {Marcin Junczys-Dowmunt and Arkadiusz Szał},
       title = {SyMGiza++: Symmetrized Word Alignment Models for Machine Translation},
       booktitle = {Security and Intelligent Information Systems (SIIS)},
-      year = {2011},
+      year = {2012},
       editor = {Bouvry, Pascal and Klopotek, Mieczyslaw A. and Leprévost, Franck and Marciniak, Malgorzata and Mykowiecka, Agnieszka and Rybinski, Henryk},
       series = {Lecture Notes in Computer Science},
       volume = {7053},
