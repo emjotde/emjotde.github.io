@@ -422,9 +422,8 @@ li { margin-top: 5px; margin-bottom: 5px; }
 pre, .highlight pre, .highlight code {
   font-family: "Ubuntu Mono", monospace;
   font-weight: normal;
-  word-wrap: normal;
-  font-size: 1rem;
-  line-height: 1.3em;
+//  font-size: 1rem;
+//  line-height: 1.3em;
 }
 
 .chords {
