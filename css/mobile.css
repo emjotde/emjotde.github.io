@@ -426,7 +426,8 @@ pre, .highlight pre, .highlight code {
   background:#fff;
   font-size:14px;
   border:1px solid #eee;
-  border-radius:3px
+  border-radius:3px;
+  white-space: nowrap;
   
  // font-family: "Ubuntu Mono", monospace;
  // font-weight: normal;
