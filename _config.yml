@@ -3,3 +3,4 @@ baseurl: http://emjotde.github.io
 permalink: /post/:title
 exclude: ['buildNPush.sh','Gemfile','Gemfile.lock','Rakefile','.git']
 paginate: 4
+markdown: kramdown
