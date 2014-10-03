@@ -7,4 +7,4 @@ nav: dydaktyka
 summary: Komunikacja człowiek-komputer, ćwiczenia - Informatyka
 ---
 
-Test
+[Wstępne wymagania]({{ site.url }}/dydaktyka/kck-2014-2015/dkck.pdf)
