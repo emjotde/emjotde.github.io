@@ -9,7 +9,9 @@ summary: Komunikacja człowiek-komputer, ćwiczenia - Informatyka
 
 10.10.2014
 
-[Plik z propozycjami, składem grup](https://docs.google.com/document/d/1l-AHiv3rn2pY-F7VZSSJTY2cNs9fJEi7mRBnObo_lyg/edit?usp=sharing)
+[8:15 - Plik z propozycjami, składem grup](https://docs.google.com/document/d/1l-AHiv3rn2pY-F7VZSSJTY2cNs9fJEi7mRBnObo_lyg/edit?usp=sharing)
+
+[10:00 - Plik z propozycjami, składem grup](https://docs.google.com/document/d/1BzE7CKyT4H978F-vkuL_QKRjgyXlrDPgo0HhG2E-oEM/edit?usp=sharing)
 
 [Wstępne wymagania]({{ site.url }}/dydaktyka/kck-2014-2015/dkck.pdf)
 
