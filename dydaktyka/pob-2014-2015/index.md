@@ -7,23 +7,30 @@ nav: dydaktyka
 summary: Programowanie Obiektowe - Ćwiczenia
 ---
 
+Ogólne
+======
+* [Zasady zaliczania]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob00-zal.pdf)
+* [Tematy projektów]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob00-prj.pdf)
+
 C++
 ===
 
-WEEK01
+Tydzień 01
 ------
 
 1. Przypomnienie wybranych elementów języka 
   * wskaźniki; referencje; tablice; dynamiczna alokacja pamięci
 2. Struktury 
   * definicja; projektowanie; wskaźniki do struktur; zagnieżdżanie
+3. [Zadania]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob01-cw.pdf)
 
-WEEK02
+
+Tydzień 02
 ------
 
 3. Wprowadzenie do klas - definicja; widoczność składowych; konstruktor/destruktor; hermetyzacja
 
-WEEK03
+Tydzień 03
 ------
 
 4. Dziedziczenie
@@ -33,7 +40,7 @@ WEEK03
   * metody wirtualne; polimorfizm; klasy abstrakcyjne;
   * atrybuty i metody statyczne
 
-WEEK04
+Tydzień 04
 ------
 
 6. Konstruktory (uzupełnienie); listy inicjalizacyjne
@@ -41,7 +48,7 @@ WEEK04
   * listy inicjalizacyjne; listy w dziedziczeniu;
   * czas życia obiektu;
 
-WEEK05
+Tydzień 05
 ------
 
 7. Operatory, konwersja typów
@@ -50,14 +57,14 @@ WEEK05
   * szablony funkcji; szablony klas;
   * przyjaźń funkcji/klas
 
-WEEK06
+Tydzień 06
 ------
 
 9. biblioteka STL; podział programu na pliki
   * wektor/lista/mapa
   * pliki nagłówkowe i źródłowe; ifndef
 
-WEEK07
+Tydzień 07
 ------
 
 10. Kolokwium C++
@@ -70,7 +77,7 @@ Java
   * typy pierwotne; opakowanie typów pierwotnych; hierarchia klas; 
   * tablice
 
-WEEK08
+Tydzień 08
 ------
 
 12. Klasy
@@ -78,7 +85,7 @@ WEEK08
   * toString(), equals()
   * pakiety
 
-WEEK09
+Tydzień 09
 ------
 
 13. Dziedziczenie
@@ -86,7 +93,7 @@ WEEK09
 14. Interfejsy
   * definiowanie interfejsu; implementacja interfejsu; polimorfizm
 
-WEEK10
+Tydzień 10
 ------
 
 15. Wyjątki
@@ -94,13 +101,13 @@ WEEK10
   * własne wyjątki; wyjątki z plikami
   * użycie klas (albo analiza projektu)
 
-WEEK11
+Tydzień 11
 ------
 
 16. Klasy generyczne
   * klasy generyczne; kontenery List/ArrayList/HashMap
 
-WEEK12
+Tydzień 12
 ------
 
 Dalszy plan jeszcze do ustalenia.
