@@ -11,6 +11,7 @@ Ogólne
 ======
 * [Zasady zaliczania]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob00-zal.pdf)
 * [Tematy projektów]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob00-prj.pdf)
+* Rozwiązania zadań przesłać na [junczys@amu.edu.pl]{mailto:junczys@amu.edu.pl} z tematem "POB2015 s123456 AB.CD", gdzie s123456 to numer indeksu, AB numer zajęć, CD numer zadania. Maile z innymi tematami nie będą brane pod uwagę przy punktacji.
 
 C++
 ===
