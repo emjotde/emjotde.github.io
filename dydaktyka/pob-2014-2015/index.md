@@ -28,7 +28,7 @@ Tydzień 02
 2. Struktury - definicja; projektowanie; wskaźniki do struktur; zagnieżdżanie
   * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob02-cw.pdf)
 3. Wprowadzenie do klas - definicja; widoczność składowych; konstruktor/destruktor; hermetyzacja
-  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob03-cw.pdf)
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob03-cw.pdf) | [pob03-code.zip]({{ site.url }}//dydaktyka/pob-2014-2015/03/pob03-code.zip)
 
 Tydzień 03
 ------
