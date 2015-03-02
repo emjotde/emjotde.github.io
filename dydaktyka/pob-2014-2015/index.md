@@ -19,18 +19,20 @@ C++
 Tydzień 01
 ------
 
-1. Przypomnienie wybranych elementów języka 
-  * wskaźniki; referencje; tablice; dynamiczna alokacja pamięci
-2. Struktury 
-  * definicja; projektowanie; wskaźniki do struktur; zagnieżdżanie
-3. Zadania na ćwiczenia: 
-  * [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob01-cw.pdf)
-  * [pob01-maxcube.cpp]({{ site.url }}/dydaktyka/pob-2014-2015/01/pob01-maxcube.cpp)
+1. Przypomnienie wybranych elementów języka - wskaźniki; referencje; tablice; dynamiczna alokacja pamięci
+  * Zadania na ćwiczenia: 
+    * [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob01-cw.pdf)
+    * [pob01-maxcube.cpp]({{ site.url }}/dydaktyka/pob-2014-2015/01/pob01-maxcube.cpp)
 
 Tydzień 02
 ------
 
+2. Struktury - definicja; projektowanie; wskaźniki do struktur; zagnieżdżanie
+  * Zadania na ćwiczenia:
+    * [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob02-cw.pdf)
 3. Wprowadzenie do klas - definicja; widoczność składowych; konstruktor/destruktor; hermetyzacja
+  * Zadania na ćwiczenia:
+    * [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob03-cw.pdf)
 
 Tydzień 03
 ------
