@@ -33,12 +33,10 @@ Tydzień 02
 Tydzień 03
 ------
 
-4. Dziedziczenie
-  * dziedziczenie; schemat dziedziczenia; dziedziczenie z wielu klas; 
-5. Polimorfizm
-  * tablice wskaźników na obiekty; dynamiczna alokacja i dealokacja; 
-  * metody wirtualne; polimorfizm; klasy abstrakcyjne;
-  * atrybuty i metody statyczne
+4. Dziedziczenie - dziedziczenie; schemat dziedziczenia; dziedziczenie z wielu klas; 
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob04-cw.pdf) - [pob04-animals.cpp]({{ site.url }}/dydaktyka/pob-2014-2015/03/pob04-animals.cpp)
+5. Polimorfizm - tablice wskaźników na obiekty; dynamiczna alokacja i dealokacja; metody wirtualne; polimorfizm; klasy abstrakcyjne; atrybuty i metody statyczne
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob05-cw.pdf)
 
 Tydzień 04
 ------
