@@ -41,10 +41,8 @@ Tydzień 03
 Tydzień 04
 ------
 
-6. Konstruktory (uzupełnienie); listy inicjalizacyjne
-  * konstruktor domyślny, kopiujący, domniemany
-  * listy inicjalizacyjne; listy w dziedziczeniu;
-  * czas życia obiektu;
+6. Konstruktory (uzupełnienie) - listy inicjalizacyjne; konstruktor domyślny, kopiujący, domniemany; listy inicjalizacyjne; listy w dziedziczeniu; czas życia obiektu;
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob06-cw.pdf) - [pob06-figures.cpp]({{ site.url }}/dydaktyka/pob-2014-2015/06/pob06-figures.cpp)
 
 Tydzień 05
 ------
