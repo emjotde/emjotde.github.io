@@ -47,11 +47,10 @@ Tydzień 04
 Tydzień 05
 ------
 
-7. Operatory, konwersja typów
-  * operatory binarne/unarne/przypisania/std:cout; konwersja typów
-8.  Szablony, przyjaźń
-  * szablony funkcji; szablony klas;
-  * przyjaźń funkcji/klas
+7. Operatory, konwersja typów - operatory binarne/unarne/przypisania/std:cout; konwersja typów
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob07-cw.pdf) - [pob07-vector3d.cpp]({{ site.url }}/dydaktyka/pob-2014-2015/07/pob07-vector3d.cpp)
+8.  Szablony, przyjaźń - szablony funkcji; szablony klas; przyjaźń funkcji/klas
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob08-cw.pdf) - [pob08-sort.cpp]({{ site.url }}/dydaktyka/pob-2014-2015/08/pob08-sort.cpp)
 
 Tydzień 06
 ------
