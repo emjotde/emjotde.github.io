@@ -55,9 +55,8 @@ Tydzień 05
 Tydzień 06
 ------
 
-9. biblioteka STL; podział programu na pliki
-  * wektor/lista/mapa
-  * pliki nagłówkowe i źródłowe; ifndef
+9. biblioteka STL; podział programu na pliki; wektor/lista/mapa; pliki nagłówkowe i źródłowe; ifndef
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob09-cw.pdf) - [pob07-stem.cpp]({{ site.url }}/dydaktyka/pob-2014-2015/09/pob09-stem.cpp) - [pl.stupid.dict]({{ site.url }}/dydaktyka/pob-2014-2015/09/pl.stupid.dict)
 
 Tydzień 07
 ------
