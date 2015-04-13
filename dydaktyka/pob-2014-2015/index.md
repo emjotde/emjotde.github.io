@@ -61,7 +61,9 @@ Tydzień 06
 Tydzień 07
 ------
 
-10. Kolokwium C++
+10. Kolokwium C++ (hasło zostanie podane na zajęciach)
+  * Grupa 1CD (13:45) : [pob10-1cd.zip]({{ site.url }}/dydaktyka/pob-2014-2015/10/pob10-1cd.zip)
+  * Grupa 1CF (17:15) : [pob10-1cf.zip]({{ site.url }}/dydaktyka/pob-2014-2015/10/pob10-1cf.zip)
 
 Java
 ====
