@@ -68,10 +68,8 @@ Tydzień 07
 Java
 ====
 
-11. Wprowadzenie do języka Java
-  * kompilacja i uruchomienie
-  * typy pierwotne; opakowanie typów pierwotnych; hierarchia klas; 
-  * tablice
+11. Wprowadzenie do języka Java; kompilacja i uruchomienie; typy pierwotne; opakowanie typów pierwotnych; hierarchia klas; tablice
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob11-cw.pdf) - [pob11-java.zip]({{ site.url }}/dydaktyka/pob-2014-2015/11/pob11-java.zip)
 
 Tydzień 08
 ------
