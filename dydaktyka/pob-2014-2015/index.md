@@ -75,7 +75,7 @@ Tydzień 08
 ------
 
 12. Klasy; definicja klas i metod; inicjalizacja obiektów; widoczność składowych; toString(), equals(); pakiety
-  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob12-cw.pdf) - [pob11-java.zip]({{ site.url }}/dydaktyka/pob-2014-2015/12/Student.java)
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob12-cw.pdf) - [Student.java]({{ site.url }}/dydaktyka/pob-2014-2015/12/Student.java)
 
 Tydzień 09
 ------
