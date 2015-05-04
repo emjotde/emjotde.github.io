@@ -81,7 +81,7 @@ Tydzień 09
 ------
 
 13. Dziedziczenie; dziedziczenie; metody wirtualne; klasy abstrakcyjne; super; klasy wewnętrzne;
-  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob13-cw.pdf)
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob13-cw.pdf) - [pob13-game.zip]({{ site.url }}/dydaktyka/pob-2014-2015/13/pob13-game.zip) - [pob13-mdispatch.zip]({{ site.url }}/dydaktyka/pob-2014-2015/13/pob13-mdispatch.zip)
 14. Interfejsy; definiowanie interfejsu; implementacja interfejsu; polimorfizm
   * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob14-cw.pdf)
 
