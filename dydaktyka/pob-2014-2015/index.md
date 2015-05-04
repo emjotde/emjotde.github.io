@@ -80,10 +80,10 @@ Tydzień 08
 Tydzień 09
 ------
 
-13. Dziedziczenie
-  * dziedziczenie; metody wirtualne; klasy abstrakcyjne; super; klasy wewnętrzne;
-14. Interfejsy
-  * definiowanie interfejsu; implementacja interfejsu; polimorfizm
+13. Dziedziczenie; dziedziczenie; metody wirtualne; klasy abstrakcyjne; super; klasy wewnętrzne;
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob13-cw.pdf)
+14. Interfejsy; definiowanie interfejsu; implementacja interfejsu; polimorfizm
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob14-cw.pdf)
 
 Tydzień 10
 ------
