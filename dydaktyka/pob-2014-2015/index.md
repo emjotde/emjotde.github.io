@@ -88,10 +88,8 @@ Tydzień 09
 Tydzień 10
 ------
 
-15. Wyjątki
-  * rzucanie, obsługa i propagacja wyjątków
-  * własne wyjątki; wyjątki z plikami
-  * użycie klas (albo analiza projektu)
+15. Wyjątki; rzucanie, obsługa i propagacja wyjątków; własne wyjątki; wyjątki z plikami; użycie klas (albo analiza projektu)
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob15-cw.pdf) - [pob15-exceptions.zip]({{ site.url }}/dydaktyka/pob-2014-2015/15/pob15-exceptions.zip)
 
 Tydzień 11
 ------
