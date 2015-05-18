@@ -94,8 +94,10 @@ Tydzień 10
 Tydzień 11
 ------
 
-16. Klasy generyczne
-  * klasy generyczne; kontenery List/ArrayList/HashMap
+16. Klasy generyczne; klasy generyczne; kontenery List/ArrayList/HashMap
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob16a-cw.pdf) - [pob16a-box.zip]({{ site.url }}/dydaktyka/pob-2014-2015/16/pob16a-box.zip)
+17. Interfejscy graficzne: Swing
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob16b-cw.pdf) - [pob16b-swing.zip]({{ site.url }}/dydaktyka/pob-2014-2015/16/pob16b-swing.zip)
 
 Tydzień 12
 ------
