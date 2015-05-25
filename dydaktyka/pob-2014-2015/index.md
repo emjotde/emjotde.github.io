@@ -99,7 +99,10 @@ Tydzień 11
 17. Interfejscy graficzne: Swing
   * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob16b-cw.pdf) - [pob16b-swing.zip]({{ site.url }}/dydaktyka/pob-2014-2015/16/pob16b-swing.zip)
 
+Ruby
+====
+
 Tydzień 12
 ------
-
-Dalszy plan jeszcze do ustalenia.
+18. Wprowadzenie do języka Ruby
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob17-cw.pdf) - [pob17-code.zip]({{ site.url }}/dydaktyka/pob-2014-2015/17/pob17-code.zip)
