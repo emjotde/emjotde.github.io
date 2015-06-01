@@ -74,7 +74,7 @@ Java
 Tydzień 08
 ------
 
-12. Klasy; definicja klas i metod; inicjalizacja obiektów; widoczność składowych; toString(), equals(); pakiety
+12. Klasy; definicja klas i m81etod; inicjalizacja obiektów; widoczność składowych; toString(), equals(); pakiety
   * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob12-cw.pdf)
 
 Tydzień 09
@@ -96,7 +96,7 @@ Tydzień 11
 
 16. Klasy generyczne; klasy generyczne; kontenery List/ArrayList/HashMap
   * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob16a-cw.pdf) - [pob16a-box.zip]({{ site.url }}/dydaktyka/pob-2014-2015/16/pob16a-box.zip)
-17. Interfejscy graficzne: Swing
+    Interfejscy graficzne: Swing
   * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob16b-cw.pdf) - [pob16b-swing.zip]({{ site.url }}/dydaktyka/pob-2014-2015/16/pob16b-swing.zip)
 
 Ruby
@@ -104,5 +104,11 @@ Ruby
 
 Tydzień 12
 ------
-18. Wprowadzenie do języka Ruby
+17. Wprowadzenie do języka Ruby
   * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob17-cw.pdf) - [pob17-code.zip]({{ site.url }}/dydaktyka/pob-2014-2015/17/pob17-code.zip)
+
+Tydzien 13
+------
+18. Kolokwium Java (hasło zostanie podane na zajęciach)
+  * Grupa 1CD (13:45) : [java-1cd.zip]({{ site.url }}/dydaktyka/pob-2014-2015/18/java-1cd.zip)
+  * Grupa 1CF (17:15) : [java-1cf.zip]({{ site.url }}/dydaktyka/pob-2014-2015/18/java-1cf.zip)
