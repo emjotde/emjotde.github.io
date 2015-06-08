@@ -112,3 +112,10 @@ Tydzien 13
 18. Kolokwium Java (hasło zostanie podane na zajęciach)
   * Grupa 1CD (13:45) : [java-1cd.zip]({{ site.url }}/dydaktyka/pob-2014-2015/18/java-1cd.zip)
   * Grupa 1CF (17:15) : [java-1cf.zip]({{ site.url }}/dydaktyka/pob-2014-2015/18/java-1cf.zip)
+
+Tydzien 14
+------
+19. Obiektowość
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob19-cw.pdf)
+20. Dziedziczenie, domieszki
+  * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob20-cw.pdf)
