@@ -119,3 +119,9 @@ Tydzien 14
   * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob19-cw.pdf)
 20. Dziedziczenie, domieszki
   * Zadania na ćwiczenia: [Polecenia]({{ site.url }}/dydaktyka/pob-2014-2015/pdf/pob20-cw.pdf)
+
+Poprawka kolokwia
+=================
+21. Kolokwium
+  * C++ (13:45) : [POB2015Cpp.zip]({{ site.url }}/dydaktyka/pob-2014-2015/popr/POB2015Cpp.zip)
+  * Java (13:45) : [POB2015Java.zip]({{ site.url }}/dydaktyka/pob-2014-2015/18/POB2015Java.zip)
