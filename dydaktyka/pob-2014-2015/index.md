@@ -123,5 +123,5 @@ Tydzien 14
 Poprawka kolokwium (język do wyboru)
 =================
 21. Kolokwium
-  * C++ (13:45) : [POB2015Cpp.zip]({{ site.url }}/dydaktyka/pob-2014-2015/popr/cpp.zip)
-  * Java (13:45) : [POB2015Java.zip]({{ site.url }}/dydaktyka/pob-2014-2015/popr/java.zip)
+  * C++ (13:45) : [cpp.zip]({{ site.url }}/dydaktyka/pob-2014-2015/popr/cpp.zip)
+  * Java (13:45) : [java.zip]({{ site.url }}/dydaktyka/pob-2014-2015/popr/java.zip)
