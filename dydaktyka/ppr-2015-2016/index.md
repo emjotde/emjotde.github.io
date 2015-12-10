@@ -7,4 +7,4 @@ nav: dydaktyka
 summary: Podstawy programowania, ćwiczenia - Informatyka, 1. rok, 1. stopień
 ---
 
-<projekty.pdf>
+[Projekty](projekty.pdf)
