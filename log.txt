@@ -1,0 +1,307 @@
+#!/bin/bash -v
+
+git commit -a -m 'Commit local changes to Jekyll sources'
+On branch jekyll
+Your branch is up-to-date with 'origin/jekyll'.
+Untracked files:
+	log.txt
+
+nothing added to commit but untracked files present
+git up
+/var/lib/gems/2.3.0/gems/git-up-0.5.12/lib/git-up.rb:139: warning: Insecure world writable dir /home/marcinj in PATH, mode 040777
+Fetching origin
+[1mjekyll [0m[32mup to date[0m
+master [32mup to date[0m
+git push
+Everything up-to-date
+bundle exec jekyll build
+Configuration from /home/marcinj/Badania/emjotde.github.io/_config.yml
+Building site: /home/marcinj/Badania/emjotde.github.io -> build
+"Processing: publications.bib"
+This is bibtex2html version 1.98, compiled on Mon Nov 2 22:52:06 UTC 2015
+Copyright (c) 1997-2010 Jean-Christophe Filliâtre and Claude Marché
+This is free software with ABSOLUTELY NO WARRANTY (use option --warranty)
+
+Reading /home/marcinj/Badania/emjotde.github.io/publications/publications.bib...ok (23 entries).
+calling BibTeX...This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+The top-level auxiliary file: bib2htmla605b3.aux
+The style file: /home/marcinj/Badania/emjotde.github.io/_plugins/style.bst
+Database file #1: /home/marcinj/Badania/emjotde.github.io/publications/publications.bib
+
+Reading bib2htmla605b3.bbl...ok (23 entries)
+Sorting...ok.
+Making HTML document (publications.html)...ok
+Making HTML list of BibTeX entries (publications_bib.html)...ok
+Successfully generated site: /home/marcinj/Badania/emjotde.github.io -> build
+git checkout master
+error: The following untracked working tree files would be overwritten by checkout:
+	build/404.html
+	build/dydaktyka/index.html
+	build/dydaktyka/iwp-2013-2014/IWP/Latex01.docelowy.pdf
+	build/dydaktyka/iwp-2013-2014/IWP/Latex01.zrodlowy.tex
+	build/dydaktyka/iwp-2013-2014/IWP/Latex02.docelowy.pdf
+	build/dydaktyka/iwp-2013-2014/IWP/cla2010.pdf
+	build/dydaktyka/iwp-2013-2014/IWP/oceny.xlsx
+	build/dydaktyka/iwp-2013-2014/IWP/przestawne1.xls
+	build/dydaktyka/iwp-2013-2014/IWP/przestawne2.xls
+	build/dydaktyka/iwp-2013-2014/IWP/przestawne3.jpg
+	build/dydaktyka/iwp-2013-2014/IWP/przestawne3.xls
+	build/dydaktyka/iwp-2013-2014/IWP/przestawne4.jpg
+	build/dydaktyka/iwp-2013-2014/IWP/regresja.pdf
+	build/dydaktyka/iwp-2013-2014/IWP/sage.xhtml
+	build/dydaktyka/iwp-2013-2014/IWP/solver.pdf
+	build/dydaktyka/iwp-2013-2014/IWP/solver2007.pdf
+	build/dydaktyka/iwp-2013-2014/IWP/szablon.zip
+	build/dydaktyka/iwp-2013-2014/IWP/table1.png
+	build/dydaktyka/iwp-2013-2014/IWP/table2.png
+	build/dydaktyka/iwp-2013-2014/IWP/table3.png
+	build/dydaktyka/iwp-2013-2014/IWP/table4.png
+	build/dydaktyka/iwp-2013-2014/IWP/table5.png
+	build/dydaktyka/iwp-2013-2014/index.html
+	build/dydaktyka/kck-2013-2014/index.html
+	build/dydaktyka/kck-2014-2015/dkck.pdf
+	build/dydaktyka/kck-2014-2015/index.html
+	build/dydaktyka/pob-2014-2015/01/pob01-maxcube.cpp
+	build/dydaktyka/pob-2014-2015/02/dates.cpp
+	build/dydaktyka/pob-2014-2015/02/path.cpp
+	build/dydaktyka/pob-2014-2015/03/foo_enhanced.cpp
+	build/dydaktyka/pob-2014-2015/03/foo_simple.cpp
+	build/dydaktyka/pob-2014-2015/03/pob03-code.zip
+	build/dydaktyka/pob-2014-2015/03/stack.c
+	build/dydaktyka/pob-2014-2015/03/stack.cpp
+	build/dydaktyka/pob-2014-2015/03/stack_list.cpp
+	build/dydaktyka/pob-2014-2015/03/stack_list_struct.cpp
+	build/dydaktyka/pob-2014-2015/04/pob04-animals.cpp
+	build/dydaktyka/pob-2014-2015/06/pob06-figures.cpp
+	build/dydaktyka/pob-2014-2015/07/pob07-vector3d.cpp
+	build/dydaktyka/pob-2014-2015/08/pob08-sort.cpp
+	build/dydaktyka/pob-2014-2015/09/pl.stupid.dict
+	build/dydaktyka/pob-2014-2015/09/pob09-stem.cpp
+	build/dydaktyka/pob-2014-2015/10/pob10-1cd.zip
+	build/dydaktyka/pob-2014-2015/10/pob10-1cf.zip
+	build/dydaktyka/pob-2014-2015/11/pob11-java.zip
+	build/dydaktyka/pob-2014-2015/12/Student.java
+	build/dydaktyka/pob-2014-2015/13/pob13-game.zip
+	build/dydaktyka/pob-2014-2015/13/pob13-mdispatch.zip
+	build/dydaktyka/pob-2014-2015/14/Figures.java
+	build/dydaktyka/pob-2014-2015/14/figures/Figures.java
+	build/dydaktyka/pob-2014-2015/14/old.Figures.java
+	build/dydaktyka/pob-2014-2015/14/pob14-figures.zip
+	build/dydaktyka/pob-2014-2015/15/pob15-exceptions.zip
+	build/dydaktyka/pob-2014-2015/16/pob16a-box.zip
+	build/dydaktyka/pob-2014-2015/16/pob16b-swing.zip
+	build/dydaktyka/pob-2014-2015/17/pob17-code.zip
+	build/dydaktyka/pob-2014-2015/18/java-1cd.zip
+	build/dydaktyka/pob-2014-2015/18/java-1cf.zip
+	build/dydaktyka/pob-2014-2015/index.html
+	build/dydaktyka/pob-2014-2015/pdf/pob00-prj.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob00-zal.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob01-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob02-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob03-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob04-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob05-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob06-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob07-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob08-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob09-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob11-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob12-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob13-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob14-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob15-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob16-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob16a-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob16b-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob17-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob19-cw.pdf
+	build/dydaktyka/pob-2014-2015/pdf/pob20-cw.pdf
+	build/dydaktyka/pob-2014-2015/popr/cpp.zip
+	build/dydaktyka/pob-2014-2015/popr/java.zip
+	build/dydaktyka/ppr-2015-2016/index.html
+	build/dydaktyka/ppr-2015-2016/ppr13-ext.pdf
+	build/dydaktyka/ppr-2015-2016/ppr13-lab.pdf
+	build/dydaktyka/ppr-2015-2016/projekty.pdf
+	build/dydaktyka/pr2-2013-2014/index.html
+	build/dydaktyka/pr2-2014-2015/index.html
+	build/img/me.jpg
+	build/img/octocat16.png
+	build/img/octocat32.png
+	build/img/twitter16.png
+	build/img/twitter32.png
+	build/index.html
+	build/js/matchmedia.js
+	build/js/picturefill.js
+	build/projects/aligned/index.html
+	build/projects/compactpt/index.html
+	build/projects/index.html
+	build/projects/lucenept/index.html
+	build/projects/polscrape/index.html
+	build/projects/psitoolkit/index.html
+	build/projects/symgiza/index.html
+	build/publications/index.html
+	build/publications/pdf/mjd.amu.conll-st2014.pdf
+	build/publications/pdf/mjd.eamt2014.pdf
+	build/publications/pdf/mjd.eamt2015.pdf
+	build/publications/pdf/mjd.emnlp2015.draft.pdf
+	build/publications/pdf/mjd.interspeech2015.pdf
+	build/publications/pdf/mjd.poltal2014.draft.pdf
+	build/publications/pdf/mjd2007ltc.pdf
+	build/publications/pdf/mjd2008konvens.pdf
+	build/publications/pdf/mjd2009phdthesis.pdf
+	build/publications/pdf/mjd2010cicling.pdf
+	build/publications/pdf/mjd2010cla.pdf
+	build/publications/pdf/mjd2011siis.pdf
+	build/publications/pdf/mjd2012pbml98_draft.pdf
+	build/publications/pdf/mjd2012psi.pdf
+	build/publications/pdf/mjd2012tsd1.pdf
+	build/publications/pdf/mjd2012tsd2.pdf
+	build/publications/publications.bib
+	build/publications/publications.html
+	build/publications/publications_bib.html
+Please move or remove them before you can switch branches.
+Aborting
+rsync -ca _site/* .
+rsync: change_dir "/home/marcinj/Badania/emjotde.github.io//_site" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+rm -rf _site
+git add *
+The following paths are ignored by one of your .gitignore files:
+css
+Use -f if you really want to add them.
+git commit -a -m 'Commit static pages'
+[jekyll 260504f] Commit static pages
+ 126 files changed, 7899 insertions(+)
+ create mode 100644 build/404.html
+ create mode 100644 build/dydaktyka/index.html
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/Latex01.docelowy.pdf
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/Latex01.zrodlowy.tex
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/Latex02.docelowy.pdf
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/cla2010.pdf
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/oceny.xlsx
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/przestawne1.xls
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/przestawne2.xls
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/przestawne3.jpg
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/przestawne3.xls
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/przestawne4.jpg
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/regresja.pdf
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/sage.xhtml
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/solver.pdf
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/solver2007.pdf
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/szablon.zip
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/table1.png
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/table2.png
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/table3.png
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/table4.png
+ create mode 100644 build/dydaktyka/iwp-2013-2014/IWP/table5.png
+ create mode 100644 build/dydaktyka/iwp-2013-2014/index.html
+ create mode 100644 build/dydaktyka/kck-2013-2014/index.html
+ create mode 100644 build/dydaktyka/kck-2014-2015/dkck.pdf
+ create mode 100644 build/dydaktyka/kck-2014-2015/index.html
+ create mode 100644 build/dydaktyka/pob-2014-2015/01/pob01-maxcube.cpp
+ create mode 100644 build/dydaktyka/pob-2014-2015/02/dates.cpp
+ create mode 100644 build/dydaktyka/pob-2014-2015/02/path.cpp
+ create mode 100644 build/dydaktyka/pob-2014-2015/03/foo_enhanced.cpp
+ create mode 100644 build/dydaktyka/pob-2014-2015/03/foo_simple.cpp
+ create mode 100644 build/dydaktyka/pob-2014-2015/03/pob03-code.zip
+ create mode 100644 build/dydaktyka/pob-2014-2015/03/stack.c
+ create mode 100644 build/dydaktyka/pob-2014-2015/03/stack.cpp
+ create mode 100644 build/dydaktyka/pob-2014-2015/03/stack_list.cpp
+ create mode 100644 build/dydaktyka/pob-2014-2015/03/stack_list_struct.cpp
+ create mode 100644 build/dydaktyka/pob-2014-2015/04/pob04-animals.cpp
+ create mode 100644 build/dydaktyka/pob-2014-2015/06/pob06-figures.cpp
+ create mode 100644 build/dydaktyka/pob-2014-2015/07/pob07-vector3d.cpp
+ create mode 100644 build/dydaktyka/pob-2014-2015/08/pob08-sort.cpp
+ create mode 100644 build/dydaktyka/pob-2014-2015/09/pl.stupid.dict
+ create mode 100644 build/dydaktyka/pob-2014-2015/09/pob09-stem.cpp
+ create mode 100644 build/dydaktyka/pob-2014-2015/10/pob10-1cd.zip
+ create mode 100644 build/dydaktyka/pob-2014-2015/10/pob10-1cf.zip
+ create mode 100644 build/dydaktyka/pob-2014-2015/11/pob11-java.zip
+ create mode 100644 build/dydaktyka/pob-2014-2015/12/Student.java
+ create mode 100644 build/dydaktyka/pob-2014-2015/13/pob13-game.zip
+ create mode 100644 build/dydaktyka/pob-2014-2015/13/pob13-mdispatch.zip
+ create mode 100644 build/dydaktyka/pob-2014-2015/14/Figures.java
+ create mode 100644 build/dydaktyka/pob-2014-2015/14/figures/Figures.java
+ create mode 100644 build/dydaktyka/pob-2014-2015/14/old.Figures.java
+ create mode 100644 build/dydaktyka/pob-2014-2015/14/pob14-figures.zip
+ create mode 100644 build/dydaktyka/pob-2014-2015/15/pob15-exceptions.zip
+ create mode 100644 build/dydaktyka/pob-2014-2015/16/pob16a-box.zip
+ create mode 100644 build/dydaktyka/pob-2014-2015/16/pob16b-swing.zip
+ create mode 100644 build/dydaktyka/pob-2014-2015/17/pob17-code.zip
+ create mode 100644 build/dydaktyka/pob-2014-2015/18/java-1cd.zip
+ create mode 100644 build/dydaktyka/pob-2014-2015/18/java-1cf.zip
+ create mode 100644 build/dydaktyka/pob-2014-2015/index.html
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob00-prj.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob00-zal.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob01-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob02-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob03-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob04-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob05-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob06-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob07-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob08-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob09-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob11-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob12-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob13-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob14-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob15-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob16-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob16a-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob16b-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob17-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob19-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/pdf/pob20-cw.pdf
+ create mode 100644 build/dydaktyka/pob-2014-2015/popr/cpp.zip
+ create mode 100644 build/dydaktyka/pob-2014-2015/popr/java.zip
+ create mode 100644 build/dydaktyka/ppr-2015-2016/index.html
+ create mode 100644 build/dydaktyka/ppr-2015-2016/ppr13-ext.pdf
+ create mode 100644 build/dydaktyka/ppr-2015-2016/ppr13-lab.pdf
+ create mode 100644 build/dydaktyka/ppr-2015-2016/projekty.pdf
+ create mode 100644 build/dydaktyka/pr2-2013-2014/index.html
+ create mode 100644 build/dydaktyka/pr2-2014-2015/index.html
+ create mode 100644 build/img/me.jpg
+ create mode 100644 build/img/octocat16.png
+ create mode 100644 build/img/octocat32.png
+ create mode 100644 build/img/twitter16.png
+ create mode 100644 build/img/twitter32.png
+ create mode 100644 build/index.html
+ create mode 100644 build/js/matchmedia.js
+ create mode 100644 build/js/picturefill.js
+ create mode 100644 build/log.txt
+ create mode 100644 build/projects/aligned/index.html
+ create mode 100644 build/projects/compactpt/index.html
+ create mode 100644 build/projects/index.html
+ create mode 100644 build/projects/lucenept/index.html
+ create mode 100644 build/projects/polscrape/index.html
+ create mode 100644 build/projects/psitoolkit/index.html
+ create mode 100644 build/projects/symgiza/index.html
+ create mode 100644 build/publications/index.html
+ create mode 100644 build/publications/pdf/mjd.amu.conll-st2014.pdf
+ create mode 100644 build/publications/pdf/mjd.eamt2014.pdf
+ create mode 100644 build/publications/pdf/mjd.eamt2015.pdf
+ create mode 100644 build/publications/pdf/mjd.emnlp2015.draft.pdf
+ create mode 100644 build/publications/pdf/mjd.interspeech2015.pdf
+ create mode 100644 build/publications/pdf/mjd.poltal2014.draft.pdf
+ create mode 100644 build/publications/pdf/mjd2007ltc.pdf
+ create mode 100644 build/publications/pdf/mjd2008konvens.pdf
+ create mode 100644 build/publications/pdf/mjd2009phdthesis.pdf
+ create mode 100644 build/publications/pdf/mjd2010cicling.pdf
+ create mode 100644 build/publications/pdf/mjd2010cla.pdf
+ create mode 100644 build/publications/pdf/mjd2011siis.pdf
+ create mode 100644 build/publications/pdf/mjd2012pbml98_draft.pdf
+ create mode 100644 build/publications/pdf/mjd2012psi.pdf
+ create mode 100644 build/publications/pdf/mjd2012tsd1.pdf
+ create mode 100644 build/publications/pdf/mjd2012tsd2.pdf
+ create mode 100644 build/publications/publications.bib
+ create mode 100644 build/publications/publications.html
+ create mode 100644 build/publications/publications_bib.html
+ create mode 100644 log.txt
+git push
+To git@github.com:emjotde/emjotde.github.io
+   9aaee55..260504f  jekyll -> jekyll
+git checkout jekyll
+Already on 'jekyll'
+M	log.txt
+Your branch is up-to-date with 'origin/jekyll'.
