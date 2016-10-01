@@ -1,0 +1,37 @@
+%& --translate-file=cp1250pl
+\documentclass[oneside,12pt,a4paper,titlepage]{report}  
+\usepackage{polski}      
+\usepackage{graphicx}  
+\usepackage{amsmath,amssymb,amsthm,amsfonts,bbm} 
+\newtheorem{tw}{Twierdzenie}
+
+
+\begin{document}
+
+MIEJSCE NA OBRAZEK Z PODPISEM
+
+\begin{tw}
+Niech ??, gdzie ?? i ?? s¹ pocz¹tkowym i koñcowym indeksem pewnego przedzia³u obserwowanych elementów. Przez ?? oznaczymy prawdopodobieñstwo wyst¹pienia dok³adnie ?? kandydatów w przedziale obserwacji ??. Wtedy 
+\\??\\
+gdzie ?? jest ustalone, a ?? i ?? s¹ funkcjami takimi, ¿e \\?? oraz ??.
+\end{tw}
+\begin{proof}
+Dowód przeprowadzimy indukcyjnie wzglêdem ??. \\
+\begin{enumerate}
+\item ??. Na przedziale od ?? do ?? nie ma ¿adnych kandydatów, je¿eli najwiêkszy z elementów wœród pierwszych ?? wystêpuje przed momentem ??. Oznacza to, ¿e ??\\
+\item Za³ó¿my prawdziwoœæ tezy dla ??, tzn. ??.\\
+\item  Niech ??. Element ?? jest ostatnim, ?? kandydatem w przedziale od ?? do ?? je¿eli:
+\begin{enumerate}
+\item jest najwiêkszy wœród pierwszych ?? elementów;
+\item wœród ??? jest dok³adnie ?? kandydatów.
+\end{enumerate}
+Prawdopodobieñstwo pierwszego zdarzenia wynosi ??, a drugiego, na mocy za³o¿enia indukcyjnego:
+\\??\\
+Zatem 
+\\??\\
+Ca³kuj¹c przez czêœci otrzymujemy, ¿e
+\\??\\
+\end{enumerate}
+\end{proof}
+
+\end{document}
