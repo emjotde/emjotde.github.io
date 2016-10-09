@@ -6,8 +6,8 @@ layout: default
 
 <article class="post no-border">
     <div class="post-header">
-        <p class="date">Feb 21, 2012</p>
         <h1>Posts</h1>
+        <p class="date">Feb 21, 2012</p>
     </div>
     <div class="post-body">
       <p>
