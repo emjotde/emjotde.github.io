@@ -4,9 +4,11 @@ nav: projects
 layout: default
 ---
 
+A number of projects I am currently working on or have been working on in the past.
+
 <h1> Open-source NLP software </h1>
 <div class="boxes">
-  {% for page in site.pages %}
+  {% for page in site.pages | sort:"title" %}
     {% if page.software == true %}
       {% if page.link %}
         <a class="project" href="{{ page.link }}">
@@ -30,7 +32,7 @@ layout: default
 
 <h1> NLP resources </h1>
 <div class="boxes">
-  {% for page in site.pages %}
+  {% for page in site.pages | sort:"title" %}
     {% if page.resource == true %}
       {% if page.link %}
         <a class="project" href="{{ page.link }}">
