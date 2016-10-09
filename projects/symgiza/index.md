@@ -4,6 +4,7 @@ title: SyMGIZA++
 software: true
 nav: projects
 summary: Symmetrized word alignment models. On average results in better alignment quality than MGIZA++.
+link: https://github.com/emjotde/symgiza-pp
 ---
 
 __Clone from [https://github.com/emjotde/symgiza-pp](https://github.com/emjotde/symgiza-pp)__
