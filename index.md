@@ -4,7 +4,9 @@ nav: about
 layout: default
 ---
 
-<article class="post no-border">
+junczys@amu.edu.pl
+
+<!--article class="post no-border">
     <div class="post-header">
         <h1>Posts</h1>
         <p class="date">Feb 21, 2012</p>
@@ -15,4 +17,4 @@ layout: default
       </p>
       <p>Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
     </div>
-</article>
+</article-->
