@@ -22,12 +22,12 @@ DGX Spark has 128 GB of unified physical memory, but Linux exposes noticeably le
 
 There are two known ways to get a substantial part of it back. First, DGX Spark can run a **64 KiB kernel**, which greatly reduces the amount of `vmemmap` metadata needed to describe physical memory ([NVIDIA DGX OS documentation](https://docs.nvidia.com/dgx/dgx-os-7-user-guide/installing_on_ubuntu.html), [Linux kernel documentation](https://docs.kernel.org/mm/vmemmap_dedup.html)). Second, on a headless GB10, the **2,046 MiB display reservation** can be reclaimed into ordinary Linux RAM ([NVIDIA forum](https://forums.developer.nvidia.com/t/reclaim-2gib-of-ram-on-headless-sparks/384621)).
 
-I am writing this because I haven't found these two methods used together. The existing work I found covers either the 64 KiB kernel or reclaiming the display carveout. On my machines the first recovered **2.098 GiB**, the second **2,046 MiB**, for a combined **4.096 GiB of additional normal application memory per Spark**.
+I am writing this because I haven't found these two methods used together. The existing work I found covers either the 64 KiB kernel or reclaiming the display carveout. On my machines the first recovered **2.098 GiB**, the second **1.998 GiB**, for a combined **4.096 GiB of additional normal application memory per Spark**.
 
 | Change | `MemTotal` increase |
 | --- | ---: |
 | 4 KiB → 64 KiB kernel | 2,200,016 KiB / 2.098 GiB |
-| Reclaim `DISPLAY_FRM` | 2,095,104 KiB / 2,046 MiB |
+| Reclaim `DISPLAY_FRM` | 2,095,104 KiB / 1.998 GiB |
 | **Combined** | **4,295,120 KiB / 4.096 GiB** |
 
 ## 1. Switching to a 64 KiB kernel
@@ -307,7 +307,7 @@ For a headless Spark, dummy Xorg plus Sunshine is enough.
 The numbers are:
 
 - **2.098 GiB** from the 64 KiB kernel.
-- **2,046 MiB** from the unused display carveout.
+- **1.998 GiB** from the unused display carveout.
 - **4.096 GiB total per Spark.**
 
 The practical payoff is substantial. On my **2× DGX Spark** setup, recovering **4.096 GiB per Spark** gives me about **8.2 GiB of additional usable memory** across the pair. With **GLM-5.3-Flash**, that was enough to grow the KV pool from **262,144 to 937,984 tokens**—about **3.58×**.
@@ -318,7 +318,7 @@ My final `MemTotal` is:
 131,893,888 KiB
 ```
 
-Pretty close to getting the full advertised 128 GiB into Linux.
+Pretty close to getting the full advertised 128 GB into Linux.
 
 ## Gotcha: I reserved another 2.125 GiB myself
 
