@@ -19,6 +19,9 @@ const { Content } = await render(post);
   description={post.data.description}
   image={post.data.image}
   article
+  published={post.data.published}
+  updated={post.data.updated}
+  tags={post.data.tags}
 >
   <article class="article-shell">
     <header class="article-header">
@@ -34,6 +37,21 @@ const { Content } = await render(post);
             })
           }
         </time>
+        {
+          post.data.updated && (
+            <span>
+              <time datetime={post.data.updated.toISOString()}>
+                Updated{" "}
+                {post.data.updated.toLocaleDateString("en-US", {
+                  month: "long",
+                  day: "numeric",
+                  year: "numeric",
+                  timeZone: "UTC",
+                })}
+              </time>
+            </span>
+          )
+        }
         <span>{post.data.tags.join(" / ")}</span>
       </div>
       <h1>{post.data.title}</h1>

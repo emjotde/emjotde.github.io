@@ -8,6 +8,9 @@ interface Props {
   description?: string;
   image?: string;
   article?: boolean;
+  published?: Date;
+  updated?: Date;
+  tags?: string[];
 }
 
 const {
@@ -15,6 +18,9 @@ const {
   description = "Research, open-source engineering, machine translation, and GPU systems by Marcin Junczys-Dowmunt.",
   image = "/og-default.svg",
   article = false,
+  published,
+  updated,
+  tags = [],
 } = Astro.props;
 
 const pageTitle = title
@@ -22,6 +28,26 @@ const pageTitle = title
   : "Marcin Junczys-Dowmunt";
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const socialImage = new URL(image, Astro.site);
+const authorUrl = new URL("/", Astro.site);
+const structuredData =
+  article && title && published
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: title,
+        description,
+        image: socialImage.href,
+        datePublished: published.toISOString(),
+        dateModified: (updated ?? published).toISOString(),
+        author: {
+          "@type": "Person",
+          name: "Marcin Junczys-Dowmunt",
+          url: authorUrl.href,
+        },
+        mainEntityOfPage: canonical.href,
+        keywords: tags,
+      }
+    : undefined;
 ---
 
 <!doctype html>
@@ -40,10 +66,46 @@ const socialImage = new URL(image, Astro.site);
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={socialImage} />
+    <meta property="og:image:alt" content={title ?? "Marcin Junczys-Dowmunt"} />
+    {
+      article && published && (
+        <meta property="article:published_time" content={published.toISOString()} />
+      )
+    }
+    {
+      article && updated && (
+        <meta property="article:modified_time" content={updated.toISOString()} />
+      )
+    }
+    {article && <meta property="article:author" content={authorUrl} />}
+    {
+      article &&
+        tags.map((tag) => <meta property="article:tag" content={tag} />)
+    }
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={socialImage} />
+    <meta name="twitter:image:alt" content={title ?? "Marcin Junczys-Dowmunt"} />
+    {
+      structuredData && (
+        <script
+          is:inline
+          type="application/ld+json"
+          set:html={JSON.stringify(structuredData).replace(/</g, "\\u003c")}
+        />
+      )
+    }
+    {
+      import.meta.env.PROD && (
+        <script
+          is:inline
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token":"5465752560f240beaa238b62200b036e"}'
+        />
+      )
+    }
     <title>{pageTitle}</title>
   </head>
   <body>
