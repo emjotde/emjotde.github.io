@@ -289,27 +289,6 @@ Results on two machines:
 
 So essentially the whole reclaimed range appeared naturally in ordinary Linux allocations and could be accessed through CUDA.
 
-## The separate crash-kernel reservation
-
-One other thing confused my initial measurements:
-
-```text
-crashkernel=2G
-```
-
-On these machines it reserved **2.125 GiB**.
-
-Removing it also increases `MemTotal`, but it is unrelated to either method above, so I don't include it in the 4.096 GiB number.
-
-My progression was:
-
-| Configuration | `MemTotal` |
-| --- | ---: |
-| 4 KiB kernel, crash kernel present | ~125,370,544 KiB / 119.56 GiB |
-| 64 KiB kernel, crash kernel present | 127,570,560 KiB / 121.66 GiB |
-| 64 KiB kernel, crash kernel removed | 129,798,784 KiB / 123.79 GiB |
-| + display reclaim | 131,893,888 KiB / 125.78 GiB |
-
 ## Headless desktop
 
 I also tested my usual Sunshine setup after reclaiming the display memory.
@@ -330,8 +309,6 @@ The numbers are:
 
 The practical payoff is substantial. On my **2× DGX Spark** setup, recovering **4.096 GiB per Spark** gives me about **8.2 GiB of additional usable memory** across the pair. With **GLM-5.3-Flash**, that was enough to grow the KV pool from **262,144 to 937,984 tokens**—about **3.58×**.
 
-There is another **2.125 GiB** available by removing the crash-kernel reservation, but that's a separate choice.
-
 My final `MemTotal` is:
 
 ```text
@@ -339,3 +316,26 @@ My final `MemTotal` is:
 ```
 
 Pretty close to getting the full advertised 128 GiB into Linux.
+
+## Gotcha: kdump reserves another 2.125 GiB
+
+I had enabled `kdump` while investigating unexplained Spark hard power-offs. If the running kernel panics, `kdump` boots a small second kernel and uses it to save the failed kernel's memory as a crash dump. That recovery kernel needs memory that the main kernel cannot touch, so Linux reserves it at boot instead of making it available to applications.
+
+My kernel command line contained:
+
+```text
+crashkernel=2G
+```
+
+On these ARM64 systems that produced a **2 GiB high reservation** plus a **128 MiB low reservation**, removing **2.125 GiB** from normal Linux memory. No process was actively using it: the memory was simply kept outside the normal allocator in case the crash kernel needed it.
+
+Once I no longer needed kernel crash dumps, I disabled `kdump` and removed the reservation. This gain is separate from the 64 KiB kernel and display reclaim, so it is not included in the **4.096 GiB** result above.
+
+My full progression was:
+
+| Configuration | `MemTotal` |
+| --- | ---: |
+| 4 KiB kernel, crash kernel present | ~125,370,544 KiB / 119.56 GiB |
+| 64 KiB kernel, crash kernel present | 127,570,560 KiB / 121.66 GiB |
+| 64 KiB kernel, crash kernel removed | 129,798,784 KiB / 123.79 GiB |
+| + display reclaim | 131,893,888 KiB / 125.78 GiB |
