@@ -75,20 +75,23 @@ const projects = [
   <section class="shell project-list">
     {
       projects.map((project, index) => (
-        <a class="project-row" href={project.href}>
-          <span class="project-number">
-            {String(index + 1).padStart(2, "0")}
-          </span>
-          <div>
-            <span class="project-kind">{project.kind}</span>
-            <h2>{project.name}</h2>
-          </div>
-          <p>{project.description}</p>
-          <span class="project-status">{project.status}</span>
-          <span class="project-arrow" aria-hidden="true">
-            &nearr;
-          </span>
-        </a>
+        <>
+          {index === 2 && <h2 class="project-group-title">Old stuff</h2>}
+          <a class="project-row" href={project.href}>
+            <span class="project-number">
+              {String(index + 1).padStart(2, "0")}
+            </span>
+            <div>
+              <span class="project-kind">{project.kind}</span>
+              <h2>{project.name}</h2>
+            </div>
+            <p>{project.description}</p>
+            <span class="project-status">{project.status}</span>
+            <span class="project-arrow" aria-hidden="true">
+              &nearr;
+            </span>
+          </a>
+        </>
       ))
     }
   </section>
