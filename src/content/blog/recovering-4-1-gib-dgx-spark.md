@@ -326,6 +326,8 @@ The numbers are:
 - **2,046 MiB** from the unused display carveout.
 - **4.096 GiB total per Spark.**
 
+The practical payoff is substantial. On my **2× DGX Spark** setup, recovering **4.096 GiB per Spark** gives me about **8.2 GiB of additional usable memory** across the pair. With **GLM-5.3-Flash**, that was enough to grow the KV pool from **262,144 to 937,984 tokens**—about **3.58×**.
+
 There is another **2.125 GiB** available by removing the crash-kernel reservation, but that's a separate choice.
 
 My final `MemTotal` is:
