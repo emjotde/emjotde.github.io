@@ -1,0 +1,32 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  published: Date;
+  slug: string;
+  tags?: string[];
+}
+
+const { title, description, published, slug, tags = [] } = Astro.props;
+---
+
+<article class="post-card">
+  <div class="post-meta">
+    <time datetime={published.toISOString()}>
+      {
+        published.toLocaleDateString("en-US", {
+          month: "short",
+          day: "numeric",
+          year: "numeric",
+          timeZone: "UTC",
+        })
+      }
+    </time>
+    {tags.length > 0 && <span>{tags.slice(0, 2).join(" / ")}</span>}
+  </div>
+  <h2><a href={`/blog/${slug}/`}>{title}</a></h2>
+  <p>{description}</p>
+  <a class="text-link" href={`/blog/${slug}/`} aria-label={`Read ${title}`}>
+    Read article <span aria-hidden="true">&rarr;</span>
+  </a>
+</article>

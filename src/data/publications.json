@@ -1,0 +1,546 @@
+[
+  {
+    "title": "GEMBA v2: Ten judgments are better than one",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:ML0RJ9NH7IQC",
+    "authors": "M Junczys-Dowmunt",
+    "venue": "Proceedings of the Tenth Conference on Machine Translation, 926-933 , 2025",
+    "year": "2025",
+    "citations": "9"
+  },
+  {
+    "title": "Uniform resource locator (url) embeddings for aligning parallel documents",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:Z5m8FVwuT1cC",
+    "authors": "HT Hoang, M Junczys-Dowmunt, A Aue",
+    "venue": "US Patent App. 18/332,672 , 2024",
+    "year": "2024",
+    "citations": "2"
+  },
+  {
+    "title": "Evaluation and large-scale training for contextual machine translation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:BUYA1_V_uYcC",
+    "authors": "M Post, M Junczys-Dowmunt",
+    "venue": "Proceedings of the Ninth Conference on Machine Translation, 1125-1139 , 2024",
+    "year": "2024",
+    "citations": "5"
+  },
+  {
+    "title": "On instruction-finetuning neural machine translation models",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:AvfA0Oy_GE0C",
+    "authors": "V Raunak, R Grundkiewicz, M Junczys-Dowmunt",
+    "venue": "Proceedings of the Ninth Conference on Machine Translation, 1155-1166 , 2024",
+    "year": "2024",
+    "citations": "6"
+  },
+  {
+    "title": "PyMarian: Fast neural machine translation and evaluation in python",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:URolC5Kub84C",
+    "authors": "T Gowda, R Grundkiewicz, E Rippeth, M Post, M Junczys-Dowmunt",
+    "venue": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language … , 2024",
+    "year": "2024",
+    "citations": "6"
+  },
+  {
+    "title": "On-the-fly fusion of large language models and machine translation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:EkHepimYqZsC",
+    "authors": "H Hoang, H Khayrallah, M Junczys-Dowmunt",
+    "venue": "Findings of the Association for Computational Linguistics: NAACL 2024, 520-532 , 2024",
+    "year": "2024",
+    "citations": "23"
+  },
+  {
+    "title": "Cometoid: Distilling strong reference-based machine translation metrics into Even stronger quality estimation metrics",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:zLWjf1WUPmwC",
+    "authors": "T Gowda, T Kocmi, M Junczys-Dowmunt",
+    "venue": "Proceedings of the eighth conference on machine translation, 751-755 , 2023",
+    "year": "2023",
+    "citations": "11"
+  },
+  {
+    "title": "SOTASTREAM: A streaming approach to machine translation training",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:ipzZ9siozwsC",
+    "authors": "M Post, T Gowda, R Grundkiewicz, H Khayrallah, R Jain, ...",
+    "venue": "Proceedings of the 3rd Workshop for Natural Language Processing Open Source … , 2023",
+    "year": "2023",
+    "citations": "4"
+  },
+  {
+    "title": "Perplexity-Driven Case Encoding Needs Augmentation for CAPITALIZATION Robustness",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:epqYDVWIO7EC",
+    "authors": "R Jain, H Khayrallah, R Grundkiewicz, M Junczys-Dowmunt",
+    "venue": "Proceedings of the 13th International Joint Conference on Natural Language … , 2023",
+    "year": "2023",
+    "citations": "2"
+  },
+  {
+    "title": "Escaping the sentence-level paradigm in machine translation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:uc_IGeMz5qoC",
+    "authors": "M Post, M Junczys-Dowmunt",
+    "venue": "arXiv preprint arXiv:2304.12959 , 2023",
+    "year": "2023",
+    "citations": "41"
+  },
+  {
+    "title": "Revisiting Locality Sensitive Hashing for Vocabulary Selection in Fast Neural Machine Translation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:0KyAp5RtaNEC",
+    "authors": "H Hoang, M Junczys-Dowmunt, R Grundkiewicz, H Khayrallah",
+    "venue": "Proceedings of the Seventh Conference on Machine Translation (WMT), 855-869 , 2022",
+    "year": "2022",
+    "citations": ""
+  },
+  {
+    "title": "The jhu-microsoft submission for wmt21 quality estimation shared task",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:9Nmd_mFXekcC",
+    "authors": "S Ding, M Junczys-Dowmunt, M Post, C Federmann, P Koehn",
+    "venue": "Proceedings of the Sixth Conference on Machine Translation, 904-910 , 2021",
+    "year": "2021",
+    "citations": "3"
+  },
+  {
+    "title": "Levenshtein training for word-level quality estimation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:XD-gHx7UXLsC",
+    "authors": "S Ding, M Junczys-Dowmunt, M Post, P Koehn",
+    "venue": "Proceedings of the 2021 conference on empirical methods in natural language … , 2021",
+    "year": "2021",
+    "citations": "12"
+  },
+  {
+    "title": "To ship or not to ship: An extensive evaluation of automatic metrics for machine translation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:t7zJ5fGR-2UC",
+    "authors": "T Kocmi, C Federmann, R Grundkiewicz, M Junczys-Dowmunt, ...",
+    "venue": "Proceedings of the sixth conference on machine translation, 478-494 , 2021",
+    "year": "2021",
+    "citations": "318"
+  },
+  {
+    "title": "The curious case of hallucinations in neural machine translation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:uJ-U7cs_P_0C",
+    "authors": "V Raunak, A Menezes, M Junczys-Dowmunt",
+    "venue": "Proceedings of the 2021 Conference of the North American Chapter of the … , 2021",
+    "year": "2021",
+    "citations": "315"
+  },
+  {
+    "title": "On user interfaces for large-scale document-level human evaluation of machine translation outputs",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:VLnqNzywnoUC",
+    "authors": "R Grundkiewicz, M Junczys-Dowmunt, C Federmann, T Kocmi",
+    "venue": "Proceedings of the Workshop on Human Evaluation of NLP Systems (HumEval), 97-106 , 2021",
+    "year": "2021",
+    "citations": "9"
+  },
+  {
+    "title": "Proceedings of the Fourth Workshop on Neural Generation and Translation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:fEOibwPWpKIC",
+    "authors": "A Birch, A Finch, H Hayashi, K Heafield, M Junczys-Dowmunt, I Konstas, ...",
+    "venue": "Proceedings of the Fourth Workshop on Neural Generation and Translation , 2020",
+    "year": "2020",
+    "citations": "1"
+  },
+  {
+    "title": "From research to production and back: Ludicrously fast neural machine translation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:35r97b3x0nAC",
+    "authors": "YJ Kim, M Junczys-Dowmunt, HH Awadalla, AF Aji, K Heafield, ...",
+    "venue": "Proceedings of the 3rd Workshop on Neural Generation and Translation, 280-288 , 2019",
+    "year": "2019",
+    "citations": "69"
+  },
+  {
+    "title": "Minimally-augmented grammatical error correction",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:evX43VCCuoAC",
+    "authors": "R Grundkiewicz, M Junczys-Dowmunt",
+    "venue": "Proceedings of the 5th Workshop on Noisy User-generated Text (W-NUT 2019 … , 2019",
+    "year": "2019",
+    "citations": "41"
+  },
+  {
+    "title": "Microsoft Translator at WMT 2019: Towards Large-Scale Document-Level Neural Machine Translation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:tzM49s52ZIMC",
+    "authors": "M Junczys-Dowmunt",
+    "venue": "Proceedings of the Fourth Conference on Machine Translation 2, 225-233 , 2019",
+    "year": "2019",
+    "citations": "195"
+  },
+  {
+    "title": "Neural grammatical error correction systems with unsupervised pre-training on synthetic data",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:_Re3VWB3Y0AC",
+    "authors": "R Grundkiewicz, M Junczys-Dowmunt, K Heafield",
+    "venue": "Proceedings of the fourteenth workshop on innovative use of NLP for building … , 2019",
+    "year": "2019",
+    "citations": "262"
+  },
+  {
+    "title": "Dual conditional cross-entropy filtering of noisy parallel corpora",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:NJ774b8OgUMC",
+    "authors": "M Junczys-Dowmunt",
+    "venue": "Proceedings of the Third Conference on Machine Translation: Shared Task … , 2018",
+    "year": "2018",
+    "citations": "160"
+  },
+  {
+    "title": "Check for updates Reinvestigating the Classification Approach to the Article and Preposition Error Correction",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:uWiczbcajpAC",
+    "authors": "R Grundkiewicz, M Junczys-Dowmunt",
+    "venue": "Human Language Technology. Challenges for Computer Science and Linguistics … , 2018",
+    "year": "2018",
+    "citations": ""
+  },
+  {
+    "title": "Marian: Cost-Effective High-Quality Neural Machine Translation in C++",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:uLbwQdceFCQC",
+    "authors": "M Junczys-Dowmunt, K Heafield, H Hoang, R Grundkiewicz, A Aue",
+    "venue": "Proceedings of the 2nd Workshop on Neural Machine Translation and Generation … , 2018",
+    "year": "2018",
+    "citations": "77"
+  },
+  {
+    "title": "Marian: Fast neural machine translation in C++",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:dQ2og3OwTAUC",
+    "authors": "M Junczys-Dowmunt, R Grundkiewicz, T Dwojak, H Hoang, K Heafield, ...",
+    "venue": "Proceedings of ACL 2018, System Demonstrations, 116-121 , 2018",
+    "year": "2018",
+    "citations": "1067"
+  },
+  {
+    "title": "Achieving human parity on automatic Chinese to English news translation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:hkOj_22Ku90C",
+    "authors": "H Hassan, A Aue, C Chen, V Chowdhary, J Clark, C Federmann, X Huang, ...",
+    "venue": "arXiv preprint arXiv:1803.05567 , 2018",
+    "year": "2018",
+    "citations": "848"
+  },
+  {
+    "title": "MS-UEdin Submission to the WMT2018 APE Shared Task: Dual-Source Transformer for Automatic Post-Editing",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:7T2F9Uy0os0C",
+    "authors": "M Junczys-Dowmunt, R Grundkiewicz",
+    "venue": "Proceedings of the Third Conference on Machine Translation: Shared Task … , 2018",
+    "year": "2018",
+    "citations": "76"
+  },
+  {
+    "title": "Microsoft's Submission to the WMT2018 News Translation Task: How I Learned to Stop Worrying and Love the Data",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:kzcrU_BdoSEC",
+    "authors": "M Junczys-Dowmunt",
+    "venue": "Proceedings of the Third Conference on Machine Translation 2, 425--430 , 2018",
+    "year": "2018",
+    "citations": "42"
+  },
+  {
+    "title": "Accelerating asynchronous stochastic gradient descent for neural machine translation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:Fu2w8maKXqMC",
+    "authors": "N Bogoychev, K Heafield, AF Aji, M Junczys-Dowmunt",
+    "venue": "Proceedings of the 2018 Conference on Empirical Methods in Natural Language … , 2018",
+    "year": "2018",
+    "citations": "23"
+  },
+  {
+    "title": "Approaching neural grammatical error correction as a low-resource machine translation task",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:JQOojiI6XY0C",
+    "authors": "M Junczys-Dowmunt, R Grundkiewicz, S Guha, K Heafield",
+    "venue": "Proceedings of the 2018 Conference of the North American Chapter of the … , 2018",
+    "year": "2018",
+    "citations": "257"
+  },
+  {
+    "title": "Near human-level performance in grammatical error correction with hybrid machine translation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:UHK10RUVsp4C",
+    "authors": "R Grundkiewicz, M Junczys-Dowmunt",
+    "venue": "Proceedings of the 2018 Conference of the North American Chapter of the … , 2018",
+    "year": "2018",
+    "citations": "136"
+  },
+  {
+    "title": "The amu-uedin submission to the wmt 2017 shared task on automatic post-editing",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:ye4kPcJQO24C",
+    "authors": "M Junczys-Dowmunt",
+    "venue": "Proceedings of the Second Conference on Machine Translation, 639-646 , 2017",
+    "year": "2017",
+    "citations": "14"
+  },
+  {
+    "title": "Pushing the limits of translation quality estimation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:eq2jaN3J8jMC",
+    "authors": "AFT Martins, M Junczys-Dowmunt, FN Kepler, R Astudillo, C Hokamp, ...",
+    "venue": "Transactions of the Association for Computational Linguistics 5, 205-218 , 2017",
+    "year": "2017",
+    "citations": "105"
+  },
+  {
+    "title": "The SUMMA Platform Prototype",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:1yQoGdGgb4wC",
+    "authors": "R Liepins, U Germann, G Barzdins, A Birch, S Renals, S Weber, ...",
+    "venue": "Proceedings of the Software Demonstrations of the 15th Conference of the … , 2017",
+    "year": "2017",
+    "citations": "7"
+  },
+  {
+    "title": "An Exploration of Neural Sequence-to-Sequence Architectures for Automatic Post-Editing",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:_Ybze24A_UAC",
+    "authors": "M Junczys-Dowmunt, R Grundkiewicz",
+    "venue": "Proceedings of the Eighth International Joint Conference on Natural Language … , 2017",
+    "year": "2017",
+    "citations": "51"
+  },
+  {
+    "title": "Predicting target language CCG supertags improves neural machine translation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:LjlpjdlvIbIC",
+    "authors": "M Nadejde, S Reddy, R Sennrich, T Dwojak, M Junczys-Dowmunt, ...",
+    "venue": "Proceedings of the Second Conference on Machine Translation, 68-79 , 2017",
+    "year": "2017",
+    "citations": "105 *"
+  },
+  {
+    "title": "Nematus: a Toolkit for Neural Machine Translation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:5awf1xo2G04C",
+    "authors": "R Sennrich, O Firat, K Cho, A Birch, B Haddow, J Hitschler, ...",
+    "venue": "Proceedings of the Software Demonstrations of the 15th Conference of the … , 2017",
+    "year": "2017",
+    "citations": "472"
+  },
+  {
+    "title": "Phrase-based Machine Translation is State-of-the-Art for Automatic Grammatical Error Correction",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:Mojj43d5GZwC",
+    "authors": "M Junczys-Dowmunt, R Grundkiewicz",
+    "venue": "Proceedings of the 2016 Conference on Empirical Methods in Natural Language … , 2016",
+    "year": "2016",
+    "citations": "130"
+  },
+  {
+    "title": "Log-linear Combinations of Monolingual and Bilingual Neural Machine Translation Models for Automatic Post-Editing",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:WA5NYHcadZ8C",
+    "authors": "M Junczys-Dowmunt, R Grundkiewicz",
+    "venue": "Proceedings of the First Conference on Machine Translation (WMT 16), 751-758 , 2016",
+    "year": "2016",
+    "citations": "121"
+  },
+  {
+    "title": "The AMU-UEDIN Submission to the WMT16 News Translation Task: Attention-based NMT Models as Feature Functions in Phrase-based SMT",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:HE397vMXCloC",
+    "authors": "M Junczys-Dowmunt, T Dwojak, R Sennrich",
+    "venue": "Proceedings of the First Conference on Machine Translation (WMT 16), 319-325 , 2016",
+    "year": "2016",
+    "citations": "63"
+  },
+  {
+    "title": "Coppa v2. 0: Corpus of parallel patent applications building large parallel corpora with gnu make",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:AXPGKjj_ei8C",
+    "authors": "M Junczys-Dowmunt, B Pouliquen, C Mazenc",
+    "venue": "4th Workshop on Challenges in the Management of Large Corpora Workshop … , 2016",
+    "year": "2016",
+    "citations": "16"
+  },
+  {
+    "title": "The University of Edinburgh’s systems submission to the MT task at IWSLT",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:JoZmwDi-zQgC",
+    "authors": "M Junczys-Dowmunt, A Birch",
+    "venue": "Proceedings of the 13th International Conference on Spoken Language Translation , 2016",
+    "year": "2016",
+    "citations": "9"
+  },
+  {
+    "title": "Fast, scalable phrase-based smt decoding",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:PELIpwtuRlgC",
+    "authors": "H Hoang, N Bogoychev, L Schwartz, M Junczys-Dowmunt",
+    "venue": "Conferences of the Association for Machine Translation in the Americas: MT … , 2016",
+    "year": "2016",
+    "citations": "6"
+  },
+  {
+    "title": "Is Neural Machine Translation Ready for Deployment? A Case Study on 30 Translation Directions",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:_B80troHkn4C",
+    "authors": "M Junczys-Dowmunt, T Dwojak, H Hoang",
+    "venue": "Proceedings of the ninth International Workshop on Spoken Language … , 2016",
+    "year": "2016",
+    "citations": "270 *"
+  },
+  {
+    "title": "Target-Side Context for Discriminative Models in Statistical Machine Translation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:Y5dfb0dijaUC",
+    "authors": "A Tamchyna, A Fraser, O Bojar, M Junczys-Dowmunt",
+    "venue": "Proceedings of the 54th Annual Meeting of the Association for Computational … , 2016",
+    "year": "2016",
+    "citations": "17"
+  },
+  {
+    "title": "The United Nations Parallel Corpus v1. 0",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:eMMeJKvmdy0C",
+    "authors": "M Ziemski, M Junczys-Dowmunt, B Pouliquen",
+    "venue": "Proceedings of the Tenth International Conference on Language Resources and … , 2016",
+    "year": "2016",
+    "citations": "636"
+  },
+  {
+    "title": "Reinvestigating the Classification Approach to the Article and Preposition Error Correction",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:N5tVd3kTz84C",
+    "authors": "R Grundkiewicz, M Junczys-Dowmunt",
+    "venue": "Language and Technology Conference, 112-122 , 2015",
+    "year": "2015",
+    "citations": ""
+  },
+  {
+    "title": "Grammatical Error Correction with (almost) no Linguistic Knowledge",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:t6usbXjVLHcC",
+    "authors": "R Grundkiewicz, M Junczys-Dowmunt",
+    "venue": "Proceedings of the 7th Language Technology Conference, 240-245 , 2015",
+    "year": "2015",
+    "citations": ""
+  },
+  {
+    "title": "Human evaluation of grammatical error correction systems",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:olpn-zPbct0C",
+    "authors": "R Grundkiewicz, M Junczys-Dowmunt, E Gillian",
+    "venue": "Proceedings of the 2015 Conference on Empirical Methods in Natural Language … , 2015",
+    "year": "2015",
+    "citations": "64"
+  },
+  {
+    "title": "SMT at the International Maritime Organization: Experiences with Combining In-house Corpora with Out-of-domain Corpora",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:5ugPr518TE4C",
+    "authors": "B Pouliquen, M Junczys-Dowmunt, B Pinero, M Ziemski",
+    "venue": "European Association for Machine Translation 2015, 202-205 , 2015",
+    "year": "2015",
+    "citations": "2"
+  },
+  {
+    "title": "The WikEd Error Corpus: A Corpus of Corrective Wikipedia Edits and its Application to Grammatical Error Correction",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:V3AGJWp-ZtQC",
+    "authors": "R Grundkiewicz, M Junczys-Dowmunt",
+    "venue": "International Conference on Natural Language Processing, 478-490 , 2014",
+    "year": "2014",
+    "citations": "86"
+  },
+  {
+    "title": "The AMU System in the CoNLL-2014 Shared Task: Grammatical Error Correction by Data-Intensive and Feature-Rich Statistical Machine Translation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:8AbLer7MMksC",
+    "authors": "M Junczys-Dowmunt, R Grundkiewicz",
+    "venue": "Proceedings of the Eighteenth Conference on Computational Natural Language … , 2014",
+    "year": "2014",
+    "citations": "99"
+  },
+  {
+    "title": "SMT of German patents at WIPO: decompounding and verb structure pre-reordering",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:BrmTIyaxlBUC",
+    "authors": "M Junczys-Dowmunt, B Pouliquen",
+    "venue": "Proceedings of the 17th Annual Conference of the European Association for … , 2014",
+    "year": "2014",
+    "citations": "1"
+  },
+  {
+    "title": "PSI-Toolkit: A Natural Language Processing Pipeline",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:BwyfMAYsbu0C",
+    "authors": "M Junczys-Dowmunt, F Graliński",
+    "venue": "Computational Linguistics, 27-39 , 2013",
+    "year": "2013",
+    "citations": ""
+  },
+  {
+    "title": "Large-scale multiple language translation accelerator at the United Nations",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:0EnyYjriUFMC",
+    "authors": "B Pouliquen, C Elizalde, M Junczys-Dowmunt, C Mazenc, ...",
+    "venue": "Proceedings of the 14th Machine Translation Summit, 345-352 , 2013",
+    "year": "2013",
+    "citations": "15"
+  },
+  {
+    "title": "Phrasal Rank-Encoding: Exploiting Phrase Redundancy and Translational Relations for Phrase Table Compression.",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:hqOjcs7Dif8C",
+    "authors": "M Junczys-Dowmunt",
+    "venue": "Prague Bull. Math. Linguistics 98, 63-74 , 2012",
+    "year": "2012",
+    "citations": "39"
+  },
+  {
+    "title": "A Genetic Programming Experiment in Natural Language Grammar Engineering",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:eQOLeE2rZwMC",
+    "authors": "M Junczys-Dowmunt",
+    "venue": "International Conference on Text, Speech and Dialogue, 336-344 , 2012",
+    "year": "2012",
+    "citations": "2"
+  },
+  {
+    "title": "A space-efficient phrase table implementation using minimal perfect hash functions",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:YsMSGLbcyi4C",
+    "authors": "M Junczys-Dowmunt",
+    "venue": "International Conference on Text, Speech and Dialogue, 320-327 , 2012",
+    "year": "2012",
+    "citations": "6"
+  },
+  {
+    "title": "SyMGiza++: Symmetrized word alignment models for statistical machine translation",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:kRWSkSYxWN8C",
+    "authors": "M Junczys-Dowmunt, A Szał",
+    "venue": "International Joint Conference of Security and Intelligent Information … , 2012",
+    "year": "2012",
+    "citations": "41"
+  },
+  {
+    "title": "A phrase table without phrases: Rank encoding for better phrase table compression",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:d1gkVwhDpl0C",
+    "authors": "M Junczys-Dowmunt",
+    "venue": "Proceedings of the 16th Annual conference of the European Association for … , 2012",
+    "year": "2012",
+    "citations": "10"
+  },
+  {
+    "title": "PSI-toolkit: A Natural Language Processing Pipeline",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:u-x6o8ySG0sC",
+    "authors": "F Gralinski, K Jassem, M Junczys-Dowmunt",
+    "venue": "Computational Linguistics—Applications. SCI. Springer , 2012",
+    "year": "2012",
+    "citations": "37"
+  },
+  {
+    "title": "SyMGiza++: A tool for parallel computation of symmetrized word alignment models",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:2osOgNQ5qMEC",
+    "authors": "M Junczys-Dowmunt, A Szał",
+    "venue": "Proceedings of the International Multiconference on Computer Science and … , 2010",
+    "year": "2010",
+    "citations": "6"
+  },
+  {
+    "title": "It's all about the trees towards a hybrid syntax-based MT system",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:u5HHmVD_uO8C",
+    "authors": "M Junczys-Dowmunt",
+    "venue": "2009 International Multiconference on Computer Science and Information … , 2009",
+    "year": "2009",
+    "citations": "7"
+  },
+  {
+    "title": "Influence of accurate compound noun splitting on bilingual vocabulary extraction.",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:9yKSN-GCB0IC",
+    "authors": "M Junczys-Dowmunt",
+    "venue": "KONVENS, 91-104 , 2008",
+    "year": "2008",
+    "citations": "3"
+  },
+  {
+    "title": "Wprowadzenie do metod statystycznych w tłumaczeniu automatycznym",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:Se3iqnhoufwC",
+    "authors": "M Junczys-Dowmunt",
+    "venue": "Investigationes Linguisticae 16, 44-66 , 2008",
+    "year": "2008",
+    "citations": "2"
+  },
+  {
+    "title": "Using a Treebank Grammar for the Syntactical Annotation of German Lexical Phrases",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:LkGwnXOMwfcC",
+    "authors": "M Junczys-Dowmut, F Graliński",
+    "venue": "Proceedings of 3rd L&T Conference , 2007",
+    "year": "2007",
+    "citations": "1"
+  },
+  {
+    "title": "GEMBA-MQM V2: Ten Judgments Are Better Than One",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:4MWp96NkSFoC",
+    "authors": "M Junczys-Dowmunt",
+    "venue": "",
+    "year": "",
+    "citations": ""
+  },
+  {
+    "title": "Niemieckie rzeczowniki złozone i ich polskie odpowiedniki",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uh_GH14AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Uh_GH14AAAAJ:vDijr-p_gm4C",
+    "authors": "M JUNCZYS-DOWMUNT",
+    "venue": "",
+    "year": "",
+    "citations": ""
+  }
+]

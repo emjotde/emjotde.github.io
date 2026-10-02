@@ -1,0 +1,1578 @@
+---
+const concepts = [
+  {
+    id: "editorial",
+    number: "01",
+    name: "Field Notes",
+    note: "Warm editorial",
+  },
+  {
+    id: "swiss",
+    number: "02",
+    name: "Index",
+    note: "Swiss modernist",
+  },
+  {
+    id: "terminal",
+    number: "03",
+    name: "System",
+    note: "Dark technical",
+  },
+  {
+    id: "blueprint",
+    number: "04",
+    name: "Blueprint",
+    note: "Engineered clarity",
+  },
+  {
+    id: "quiet",
+    number: "05",
+    name: "Margin",
+    note: "Quiet minimal",
+  },
+  {
+    id: "signal",
+    number: "06",
+    name: "Signal",
+    note: "Bold geometric",
+  },
+  {
+    id: "press",
+    number: "07",
+    name: "Press",
+    note: "Technical newspaper",
+  },
+  {
+    id: "prism",
+    number: "08",
+    name: "Prism",
+    note: "Luminous glass",
+  },
+  {
+    id: "archive",
+    number: "09",
+    name: "Archive",
+    note: "Museum catalog",
+  },
+  {
+    id: "brutalist",
+    number: "10",
+    name: "Raw",
+    note: "Monochrome brutalist",
+  },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex" />
+    <title>Website style lab | Marcin Junczys-Dowmunt</title>
+    <style is:global>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        min-height: 100%;
+      }
+
+      body {
+        margin: 0;
+        color: #eeeae1;
+        background: #141614;
+        font-family: "Manrope", sans-serif;
+      }
+
+      button,
+      a {
+        font: inherit;
+      }
+
+      .lab-shell {
+        display: grid;
+        min-height: 100vh;
+        grid-template-rows: auto minmax(0, 1fr) auto;
+      }
+
+      .lab-header {
+        display: flex;
+        min-height: 76px;
+        padding: 18px clamp(18px, 3vw, 44px);
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        border-bottom: 1px solid #363a36;
+      }
+
+      .lab-title {
+        display: flex;
+        align-items: baseline;
+        gap: 14px;
+      }
+
+      .lab-title strong {
+        font-family: "DM Mono", monospace;
+        font-size: 0.76rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .lab-title span {
+        color: #959b95;
+        font-size: 0.72rem;
+      }
+
+      .lab-position {
+        color: #959b95;
+        font-family: "DM Mono", monospace;
+        font-size: 0.68rem;
+        letter-spacing: 0.08em;
+      }
+
+      .carousel {
+        overflow: hidden;
+        padding: clamp(18px, 3vw, 42px);
+      }
+
+      .track {
+        display: flex;
+        height: 100%;
+        transition: transform 500ms cubic-bezier(0.65, 0, 0.35, 1);
+      }
+
+      .slide {
+        display: grid;
+        width: 100%;
+        min-width: 0;
+        flex: 0 0 100%;
+        min-height: calc(100vh - 190px);
+        place-items: center;
+      }
+
+      .concept-frame {
+        overflow: hidden;
+        width: min(1320px, 100%);
+        min-width: 0;
+        min-height: min(760px, calc(100vh - 210px));
+        border-radius: 8px;
+        box-shadow: 0 22px 70px rgb(0 0 0 / 35%);
+      }
+
+      .concept-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .concept-nav ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        gap: 28px;
+        list-style: none;
+      }
+
+      .concept-nav a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .concept-kicker {
+        text-transform: uppercase;
+      }
+
+      .concept-cta {
+        display: inline-flex;
+        text-decoration: none;
+      }
+
+      /* Concept 1: current editorial direction */
+      .editorial {
+        padding: clamp(24px, 4vw, 60px);
+        color: #1f3028;
+        background: #f4efe4;
+        font-family: "Manrope", sans-serif;
+      }
+
+      .editorial .concept-nav {
+        padding-bottom: 28px;
+        border-bottom: 1px solid #c9c1b3;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .editorial .concept-logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .editorial .concept-logo b {
+        display: grid;
+        width: 38px;
+        height: 38px;
+        place-items: center;
+        border-radius: 4px;
+        color: #f4efe4;
+        background: #1f3028;
+        font-family: "DM Mono", monospace;
+        font-size: 0.68rem;
+      }
+
+      .editorial .concept-content {
+        padding-block: clamp(70px, 9vw, 130px) 70px;
+      }
+
+      .editorial .concept-kicker {
+        color: #d55b3e;
+        font-family: "DM Mono", monospace;
+        font-size: 0.68rem;
+        letter-spacing: 0.09em;
+      }
+
+      .editorial h1 {
+        max-width: 950px;
+        margin: 22px 0 42px;
+        font-family: "Newsreader", serif;
+        font-size: clamp(4rem, 8vw, 7.4rem);
+        font-weight: 500;
+        letter-spacing: -0.06em;
+        line-height: 0.88;
+      }
+
+      .editorial h1 em {
+        color: #d55b3e;
+        font-weight: 400;
+      }
+
+      .editorial .concept-bottom {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        gap: 80px;
+      }
+
+      .editorial .concept-bottom > p {
+        max-width: 650px;
+        margin: 0;
+        font-family: "Newsreader", serif;
+        font-size: clamp(1.3rem, 2vw, 1.8rem);
+        line-height: 1.35;
+      }
+
+      .editorial .concept-feature {
+        padding-left: 20px;
+        border-left: 2px solid #d55b3e;
+      }
+
+      .editorial .concept-feature span {
+        color: #687269;
+        font-family: "DM Mono", monospace;
+        font-size: 0.62rem;
+        text-transform: uppercase;
+      }
+
+      .editorial .concept-feature p {
+        margin: 7px 0;
+        font-weight: 700;
+      }
+
+      /* Concept 2: Swiss */
+      .swiss {
+        position: relative;
+        padding: clamp(22px, 3.5vw, 54px);
+        color: #101010;
+        background: #f7f7f3;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .swiss::after {
+        position: absolute;
+        top: 0;
+        right: 13%;
+        bottom: 0;
+        width: 1px;
+        content: "";
+        background: #d7d7d2;
+      }
+
+      .swiss .concept-nav {
+        position: relative;
+        z-index: 1;
+        font-size: 0.68rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .swiss .concept-logo {
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: -0.04em;
+      }
+
+      .swiss .concept-index {
+        color: #eb3e28;
+      }
+
+      .swiss .concept-content {
+        display: grid;
+        padding-top: clamp(80px, 11vw, 150px);
+        grid-template-columns: 1fr 2.6fr;
+        gap: 30px;
+      }
+
+      .swiss .concept-kicker {
+        padding-top: 11px;
+        color: #eb3e28;
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .swiss h1 {
+        max-width: 900px;
+        margin: 0;
+        font-size: clamp(4.2rem, 9vw, 8.5rem);
+        font-weight: 700;
+        letter-spacing: -0.075em;
+        line-height: 0.82;
+      }
+
+      .swiss h1 span {
+        color: #eb3e28;
+      }
+
+      .swiss .concept-bottom {
+        display: grid;
+        margin-top: 75px;
+        grid-column: 2;
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+        border-top: 5px solid #101010;
+      }
+
+      .swiss .concept-bottom p {
+        margin: 14px 0 0;
+        font-size: 0.86rem;
+        line-height: 1.5;
+      }
+
+      .swiss .concept-cta {
+        margin-top: 14px;
+        justify-self: end;
+        color: #eb3e28;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      /* Concept 3: terminal */
+      .terminal {
+        position: relative;
+        padding: clamp(22px, 3.5vw, 52px);
+        color: #d9ff62;
+        background:
+          linear-gradient(rgb(217 255 98 / 4%) 1px, transparent 1px),
+          linear-gradient(90deg, rgb(217 255 98 / 4%) 1px, transparent 1px),
+          #090d0b;
+        background-size: 28px 28px;
+        font-family: "DM Mono", monospace;
+      }
+
+      .terminal::before {
+        position: absolute;
+        inset: 0;
+        content: "";
+        pointer-events: none;
+        background: linear-gradient(transparent 50%, rgb(0 0 0 / 10%) 50%);
+        background-size: 100% 4px;
+      }
+
+      .terminal .concept-nav {
+        position: relative;
+        z-index: 1;
+        color: #899b79;
+        font-size: 0.67rem;
+        text-transform: uppercase;
+      }
+
+      .terminal .concept-logo::before {
+        color: #d9ff62;
+        content: "> ";
+      }
+
+      .terminal .concept-content {
+        position: relative;
+        z-index: 1;
+        padding-top: clamp(80px, 10vw, 145px);
+      }
+
+      .terminal .concept-kicker {
+        color: #899b79;
+        font-size: 0.68rem;
+        letter-spacing: 0.08em;
+      }
+
+      .terminal .concept-kicker::before {
+        color: #d9ff62;
+        content: "$ ";
+      }
+
+      .terminal h1 {
+        max-width: 1060px;
+        margin: 26px 0 50px;
+        color: #f2f5eb;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: clamp(3.8rem, 7.8vw, 7rem);
+        font-weight: 500;
+        letter-spacing: -0.06em;
+        line-height: 0.93;
+      }
+
+      .terminal h1 span {
+        color: #d9ff62;
+      }
+
+      .terminal .concept-bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12px;
+      }
+
+      .terminal .terminal-card {
+        min-height: 120px;
+        padding: 18px;
+        border: 1px solid #3a4933;
+        background: rgb(10 17 12 / 74%);
+      }
+
+      .terminal .terminal-card span {
+        color: #899b79;
+        font-size: 0.62rem;
+      }
+
+      .terminal .terminal-card p {
+        margin: 22px 0 0;
+        color: #eef1e8;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1.1rem;
+      }
+
+      /* Concept 4: blueprint */
+      .blueprint {
+        position: relative;
+        padding: clamp(24px, 4vw, 60px);
+        color: #e9f3ff;
+        background:
+          linear-gradient(rgb(158 201 255 / 10%) 1px, transparent 1px),
+          linear-gradient(90deg, rgb(158 201 255 / 10%) 1px, transparent 1px),
+          #0b3970;
+        background-size: 36px 36px;
+        font-family: "Space Grotesk", sans-serif;
+      }
+
+      .blueprint .concept-nav {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #8eb8e5;
+        font-family: "DM Mono", monospace;
+        font-size: 0.65rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .blueprint .concept-logo {
+        padding: 7px 10px;
+        border: 1px solid #8eb8e5;
+      }
+
+      .blueprint .concept-content {
+        display: grid;
+        padding-top: clamp(65px, 9vw, 120px);
+        grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.5fr);
+        gap: 70px;
+        align-items: end;
+      }
+
+      .blueprint .concept-kicker {
+        color: #9ec9ff;
+        font-family: "DM Mono", monospace;
+        font-size: 0.68rem;
+        letter-spacing: 0.08em;
+      }
+
+      .blueprint h1 {
+        margin: 20px 0 0;
+        font-size: clamp(3.7rem, 7.5vw, 7rem);
+        font-weight: 500;
+        letter-spacing: -0.065em;
+        line-height: 0.9;
+      }
+
+      .blueprint h1 span {
+        color: #ffcc53;
+      }
+
+      .blueprint .diagram {
+        position: relative;
+        display: grid;
+        aspect-ratio: 1;
+        place-items: center;
+        border: 1px solid #8eb8e5;
+        border-radius: 50%;
+      }
+
+      .blueprint .diagram::before,
+      .blueprint .diagram::after {
+        position: absolute;
+        content: "";
+        background: #8eb8e5;
+      }
+
+      .blueprint .diagram::before {
+        width: 140%;
+        height: 1px;
+      }
+
+      .blueprint .diagram::after {
+        width: 1px;
+        height: 140%;
+      }
+
+      .blueprint .diagram span {
+        display: grid;
+        z-index: 1;
+        width: 60%;
+        aspect-ratio: 1;
+        place-items: center;
+        border: 1px solid #ffcc53;
+        border-radius: 50%;
+        color: #ffcc53;
+        font-family: "DM Mono", monospace;
+        font-size: 0.67rem;
+        text-align: center;
+      }
+
+      .blueprint .concept-bottom {
+        display: grid;
+        margin-top: 70px;
+        padding-top: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        border-top: 1px solid #8eb8e5;
+      }
+
+      .blueprint .concept-bottom p {
+        margin: 0;
+        color: #b8d5f4;
+        font-family: "DM Mono", monospace;
+        font-size: 0.65rem;
+      }
+
+      /* Concept 5: quiet */
+      .quiet {
+        padding: clamp(24px, 4vw, 64px);
+        color: #292824;
+        background: #fbfaf7;
+        font-family: "Newsreader", serif;
+      }
+
+      .quiet .concept-nav {
+        font-family: "Manrope", sans-serif;
+        font-size: 0.66rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .quiet .concept-logo {
+        font-family: "Newsreader", serif;
+        font-size: 1.1rem;
+        letter-spacing: 0;
+        text-transform: none;
+      }
+
+      .quiet .concept-content {
+        max-width: 940px;
+        margin-inline: auto;
+        padding-block: clamp(100px, 13vw, 170px) 60px;
+        text-align: center;
+      }
+
+      .quiet .concept-kicker {
+        color: #8b877e;
+        font-family: "Manrope", sans-serif;
+        font-size: 0.65rem;
+        letter-spacing: 0.12em;
+      }
+
+      .quiet h1 {
+        margin: 32px auto 38px;
+        font-size: clamp(4rem, 8vw, 7.2rem);
+        font-weight: 400;
+        letter-spacing: -0.055em;
+        line-height: 0.95;
+      }
+
+      .quiet h1 em {
+        font-weight: 400;
+      }
+
+      .quiet .concept-content > p {
+        max-width: 600px;
+        margin: 0 auto;
+        color: #77736b;
+        font-size: 1.25rem;
+        line-height: 1.55;
+      }
+
+      .quiet .concept-bottom {
+        display: flex;
+        margin-top: 70px;
+        justify-content: center;
+        gap: 36px;
+        font-family: "Manrope", sans-serif;
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      /* Concept 6: signal */
+      .signal {
+        position: relative;
+        overflow: hidden;
+        padding: clamp(24px, 4vw, 58px);
+        color: #111b4b;
+        background: #f0ff3d;
+        font-family: "Space Grotesk", sans-serif;
+      }
+
+      .signal::after {
+        position: absolute;
+        right: -12%;
+        bottom: -43%;
+        width: min(58vw, 760px);
+        aspect-ratio: 1;
+        border: clamp(50px, 8vw, 120px) solid #2157ff;
+        border-radius: 50%;
+        content: "";
+      }
+
+      .signal .concept-nav {
+        position: relative;
+        z-index: 1;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #111b4b;
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .signal .concept-logo {
+        font-size: 1.4rem;
+        letter-spacing: -0.06em;
+      }
+
+      .signal .concept-content {
+        position: relative;
+        z-index: 1;
+        max-width: 1020px;
+        padding-top: clamp(70px, 9vw, 125px);
+      }
+
+      .signal .concept-kicker {
+        display: inline-block;
+        padding: 7px 11px;
+        color: #f0ff3d;
+        background: #111b4b;
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .signal h1 {
+        margin: 26px 0 42px;
+        font-size: clamp(4rem, 8.5vw, 8rem);
+        font-weight: 700;
+        letter-spacing: -0.08em;
+        line-height: 0.82;
+        text-transform: uppercase;
+      }
+
+      .signal h1 span {
+        color: #2157ff;
+      }
+
+      .signal .concept-bottom {
+        display: flex;
+        max-width: 720px;
+        align-items: center;
+        gap: 28px;
+      }
+
+      .signal .concept-bottom p {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .signal .concept-cta {
+        min-width: max-content;
+        padding: 12px 18px;
+        color: #fff;
+        background: #2157ff;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      /* Concept 7: press */
+      .press {
+        padding: clamp(20px, 3vw, 46px);
+        color: #171714;
+        background: #ebe7da;
+        font-family: Georgia, "Times New Roman", serif;
+      }
+
+      .press .masthead {
+        display: grid;
+        padding-bottom: 14px;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: end;
+        border-bottom: 4px double #171714;
+      }
+
+      .press .masthead small {
+        font-family: "DM Mono", monospace;
+        font-size: 0.58rem;
+        text-transform: uppercase;
+      }
+
+      .press .masthead small:last-child {
+        text-align: right;
+      }
+
+      .press .masthead strong {
+        font-size: clamp(1.6rem, 3vw, 2.5rem);
+        line-height: 1;
+      }
+
+      .press .press-nav {
+        display: flex;
+        padding-block: 10px;
+        justify-content: center;
+        gap: 36px;
+        border-bottom: 1px solid #171714;
+        font-family: "DM Mono", monospace;
+        font-size: 0.59rem;
+        text-transform: uppercase;
+      }
+
+      .press .concept-content {
+        display: grid;
+        padding-top: 35px;
+        grid-template-columns: 2.1fr 0.9fr;
+        gap: 35px;
+      }
+
+      .press .lead-story {
+        padding-right: 35px;
+        border-right: 1px solid #171714;
+      }
+
+      .press .concept-kicker {
+        color: #b62e24;
+        font-family: "DM Mono", monospace;
+        font-size: 0.63rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+      }
+
+      .press h1 {
+        margin: 18px 0 22px;
+        font-size: clamp(3.5rem, 7.5vw, 7rem);
+        font-weight: 700;
+        letter-spacing: -0.06em;
+        line-height: 0.86;
+      }
+
+      .press .deck {
+        max-width: 780px;
+        margin: 0;
+        font-size: 1.25rem;
+        font-style: italic;
+        line-height: 1.4;
+      }
+
+      .press .press-side article {
+        padding: 22px 0;
+        border-top: 1px solid #171714;
+      }
+
+      .press .press-side article:first-child {
+        padding-top: 0;
+        border-top: 0;
+      }
+
+      .press .press-side span {
+        color: #b62e24;
+        font-family: "DM Mono", monospace;
+        font-size: 0.58rem;
+        text-transform: uppercase;
+      }
+
+      .press .press-side h2 {
+        margin: 7px 0 0;
+        font-size: 1.45rem;
+        line-height: 1.05;
+      }
+
+      /* Concept 8: prism */
+      .prism {
+        position: relative;
+        overflow: hidden;
+        padding: clamp(24px, 4vw, 60px);
+        color: #fff;
+        background:
+          radial-gradient(circle at 15% 80%, #d12da7 0, transparent 38%),
+          radial-gradient(circle at 87% 18%, #3d76ff 0, transparent 42%),
+          linear-gradient(135deg, #130c32, #151947 58%, #071628);
+        font-family: "Space Grotesk", sans-serif;
+      }
+
+      .prism::before {
+        position: absolute;
+        top: 10%;
+        left: 40%;
+        width: 340px;
+        height: 340px;
+        border: 1px solid rgb(255 255 255 / 28%);
+        border-radius: 38% 62% 67% 33%;
+        content: "";
+        filter: blur(1px);
+        transform: rotate(35deg);
+      }
+
+      .prism .concept-nav {
+        position: relative;
+        z-index: 1;
+        padding: 12px 18px;
+        border: 1px solid rgb(255 255 255 / 20%);
+        border-radius: 14px;
+        background: rgb(255 255 255 / 8%);
+        backdrop-filter: blur(18px);
+        font-size: 0.67rem;
+      }
+
+      .prism .concept-logo {
+        font-weight: 700;
+      }
+
+      .prism .concept-content {
+        position: relative;
+        z-index: 1;
+        max-width: 1030px;
+        padding-top: clamp(85px, 11vw, 155px);
+      }
+
+      .prism .concept-kicker {
+        color: #8feeff;
+        font-size: 0.68rem;
+        letter-spacing: 0.13em;
+      }
+
+      .prism h1 {
+        margin: 20px 0 42px;
+        font-size: clamp(3.8rem, 8vw, 7.4rem);
+        font-weight: 500;
+        letter-spacing: -0.065em;
+        line-height: 0.9;
+      }
+
+      .prism h1 span {
+        color: transparent;
+        background: linear-gradient(90deg, #8feeff, #ff9ce8);
+        background-clip: text;
+      }
+
+      .prism .concept-bottom {
+        display: flex;
+        max-width: 770px;
+        padding: 22px 25px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        border: 1px solid rgb(255 255 255 / 20%);
+        border-radius: 18px;
+        background: rgb(255 255 255 / 8%);
+        backdrop-filter: blur(20px);
+      }
+
+      .prism .concept-bottom p {
+        margin: 0;
+        color: #d3d7ed;
+        font-size: 0.86rem;
+      }
+
+      .prism .concept-cta {
+        min-width: max-content;
+        color: #8feeff;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      /* Concept 9: archive */
+      .archive {
+        padding: clamp(24px, 4vw, 58px);
+        color: #352f28;
+        background: #dcd3bf;
+        font-family: "Newsreader", serif;
+      }
+
+      .archive .concept-nav {
+        padding-bottom: 24px;
+        border-bottom: 1px solid #817969;
+        font-family: "DM Mono", monospace;
+        font-size: 0.62rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .archive .concept-logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .archive .concept-logo::before {
+        display: grid;
+        width: 42px;
+        height: 42px;
+        place-items: center;
+        border: 1px solid #817969;
+        border-radius: 50%;
+        content: "09";
+      }
+
+      .archive .concept-content {
+        display: grid;
+        padding-top: clamp(65px, 9vw, 120px);
+        grid-template-columns: 180px minmax(0, 1fr);
+        gap: 45px;
+      }
+
+      .archive .accession {
+        font-family: "DM Mono", monospace;
+        font-size: 0.63rem;
+        line-height: 1.8;
+        text-transform: uppercase;
+      }
+
+      .archive .accession span {
+        display: block;
+        color: #a3442d;
+      }
+
+      .archive .concept-kicker {
+        color: #a3442d;
+        font-family: "DM Mono", monospace;
+        font-size: 0.65rem;
+        letter-spacing: 0.08em;
+      }
+
+      .archive h1 {
+        max-width: 900px;
+        margin: 20px 0 35px;
+        font-size: clamp(3.8rem, 7.7vw, 7.2rem);
+        font-weight: 400;
+        letter-spacing: -0.055em;
+        line-height: 0.9;
+      }
+
+      .archive .archive-description {
+        max-width: 650px;
+        margin: 0;
+        color: #5d554b;
+        font-size: 1.25rem;
+        line-height: 1.45;
+      }
+
+      .archive .concept-bottom {
+        display: flex;
+        margin-top: 65px;
+        padding-top: 18px;
+        justify-content: space-between;
+        border-top: 1px solid #817969;
+        font-family: "DM Mono", monospace;
+        font-size: 0.61rem;
+        text-transform: uppercase;
+      }
+
+      /* Concept 10: brutalist */
+      .brutalist {
+        padding: clamp(18px, 2.5vw, 38px);
+        color: #000;
+        background: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .brutalist .concept-nav {
+        padding: 10px 12px;
+        border: 4px solid #000;
+        font-size: 0.72rem;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .brutalist .concept-logo {
+        color: #fff;
+        background: #000;
+      }
+
+      .brutalist .concept-content {
+        padding-top: clamp(55px, 7vw, 95px);
+      }
+
+      .brutalist .concept-kicker {
+        display: inline-block;
+        padding: 5px 8px;
+        border: 3px solid #000;
+        font-size: 0.7rem;
+        font-weight: 900;
+        letter-spacing: 0.04em;
+      }
+
+      .brutalist h1 {
+        max-width: 1100px;
+        margin: 18px 0 30px;
+        font-size: clamp(4.2rem, 9.5vw, 8.8rem);
+        font-weight: 900;
+        letter-spacing: -0.09em;
+        line-height: 0.78;
+        text-transform: uppercase;
+      }
+
+      .brutalist h1 span {
+        color: #fff;
+        background: #000;
+      }
+
+      .brutalist .concept-bottom {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 15px;
+      }
+
+      .brutalist .concept-bottom > * {
+        margin: 0;
+        padding: 16px;
+        border: 4px solid #000;
+        font-size: 0.9rem;
+        font-weight: 700;
+      }
+
+      .brutalist .concept-cta {
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        background: #000;
+        text-transform: uppercase;
+      }
+
+      .lab-controls {
+        display: grid;
+        min-height: 94px;
+        padding: 16px clamp(18px, 3vw, 44px);
+        grid-template-columns: auto 1fr auto;
+        gap: 32px;
+        align-items: center;
+        border-top: 1px solid #363a36;
+      }
+
+      .arrow-group {
+        display: flex;
+        gap: 8px;
+      }
+
+      .arrow {
+        display: grid;
+        width: 46px;
+        height: 46px;
+        padding: 0;
+        place-items: center;
+        border: 1px solid #555a55;
+        border-radius: 50%;
+        color: #eeeae1;
+        background: transparent;
+        cursor: pointer;
+      }
+
+      .arrow:hover {
+        color: #151714;
+        background: #eeeae1;
+      }
+
+      .concept-tabs {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+      }
+
+      .concept-tab {
+        padding: 9px 13px;
+        border: 0;
+        border-bottom: 2px solid transparent;
+        color: #7f857f;
+        background: transparent;
+        cursor: pointer;
+        font-family: "DM Mono", monospace;
+        font-size: 0.62rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .concept-tab[aria-selected="true"] {
+        border-bottom-color: #ec6549;
+        color: #eeeae1;
+      }
+
+      .lab-hint {
+        color: #777d77;
+        font-family: "DM Mono", monospace;
+        font-size: 0.62rem;
+      }
+
+      @media (max-width: 800px) {
+        .carousel {
+          padding: 12px;
+        }
+
+        .concept-frame {
+          min-height: calc(100vh - 190px);
+          border-radius: 4px;
+        }
+
+        .concept-nav ul {
+          gap: 14px;
+        }
+
+        .editorial .concept-bottom,
+        .blueprint .concept-content,
+        .press .concept-content,
+        .archive .concept-content {
+          grid-template-columns: 1fr;
+          gap: 38px;
+        }
+
+        .swiss .concept-content {
+          grid-template-columns: 1fr;
+        }
+
+        .swiss .concept-bottom {
+          grid-column: 1;
+        }
+
+        .terminal .concept-bottom,
+        .blueprint .concept-bottom {
+          grid-template-columns: 1fr;
+        }
+
+        .blueprint .diagram {
+          display: none;
+        }
+
+        .press .lead-story {
+          padding-right: 0;
+          border-right: 0;
+        }
+
+        .archive .accession {
+          display: none;
+        }
+
+        .concept-tabs {
+          overflow-x: auto;
+          justify-content: flex-start;
+        }
+
+        .lab-controls {
+          grid-template-columns: auto 1fr;
+        }
+
+        .lab-hint {
+          display: none;
+        }
+      }
+
+      @media (max-width: 540px) {
+        .lab-header {
+          min-height: 64px;
+        }
+
+        .lab-title span,
+        .concept-nav ul {
+          display: none;
+        }
+
+        .concept-frame {
+          min-height: calc(100vh - 168px);
+        }
+
+        .editorial h1,
+        .swiss h1,
+        .terminal h1,
+        .blueprint h1,
+        .quiet h1,
+        .signal h1,
+        .press h1,
+        .prism h1,
+        .archive h1,
+        .brutalist h1 {
+          font-size: clamp(3rem, 16vw, 4.5rem);
+        }
+
+        .editorial .concept-content,
+        .terminal .concept-content,
+        .blueprint .concept-content,
+        .quiet .concept-content,
+        .signal .concept-content,
+        .prism .concept-content {
+          padding-top: 70px;
+        }
+
+        .terminal .concept-bottom {
+          grid-template-columns: 1fr;
+        }
+
+        .terminal .terminal-card:nth-child(n + 2) {
+          display: none;
+        }
+
+        .press .press-side,
+        .archive .concept-bottom {
+          display: none;
+        }
+
+        .signal .concept-bottom,
+        .prism .concept-bottom {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .brutalist .concept-bottom {
+          grid-template-columns: 1fr;
+        }
+
+        .lab-controls {
+          min-height: 80px;
+          gap: 14px;
+        }
+
+        .concept-tab {
+          padding-inline: 8px;
+        }
+
+        .concept-tab span {
+          display: none;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .track {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="lab-shell">
+      <header class="lab-header">
+        <div class="lab-title">
+          <strong>Website style lab</strong>
+          <span>Ten possible directions</span>
+        </div>
+        <span class="lab-position" aria-live="polite">01 / 10</span>
+      </header>
+
+      <div class="carousel" aria-roledescription="carousel" aria-label="Website design concepts">
+        <div class="track">
+          <section class="slide" aria-label="Field Notes, warm editorial">
+            <div class="concept-frame editorial">
+              <nav class="concept-nav">
+                <div class="concept-logo"><b>MJ</b> Marcin Junczys-Dowmunt</div>
+                <ul><li>Writing</li><li>Projects</li><li>Publications</li></ul>
+              </nav>
+              <div class="concept-content">
+                <div class="concept-kicker">Research scientist &amp; open-source engineer</div>
+                <h1>Building systems that make machine learning <em>work.</em></h1>
+                <div class="concept-bottom">
+                  <p>Machine translation, efficient inference, and the systems underneath them.</p>
+                  <div class="concept-feature">
+                    <span>Latest field note</span>
+                    <p>Recovering 4.1 GiB on DGX Spark</p>
+                    <a class="concept-cta">Read article &rarr;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="slide" aria-label="Index, Swiss modernist">
+            <div class="concept-frame swiss">
+              <nav class="concept-nav">
+                <div class="concept-logo">MJD<span class="concept-index">/01</span></div>
+                <ul><li>Index</li><li>Research</li><li>Notes</li><li>Info</li></ul>
+              </nav>
+              <div class="concept-content">
+                <div class="concept-kicker">Research / Engineering</div>
+                <h1>Language.<br />Models.<br /><span>Systems.</span></h1>
+                <div class="concept-bottom">
+                  <p>Marcin Junczys-Dowmunt builds machine translation systems and open-source software at production scale.</p>
+                  <a class="concept-cta">View selected work &nearr;</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="slide" aria-label="System, dark technical">
+            <div class="concept-frame terminal">
+              <nav class="concept-nav">
+                <div class="concept-logo">emjotde</div>
+                <ul><li>~/notes</li><li>~/projects</li><li>~/papers</li></ul>
+              </nav>
+              <div class="concept-content">
+                <div class="concept-kicker">whoami</div>
+                <h1>Researching the stack from <span>model</span> to metal.</h1>
+                <div class="concept-bottom">
+                  <div class="terminal-card"><span>01 / CURRENT</span><p>Microsoft Translator</p></div>
+                  <div class="terminal-card"><span>02 / LATEST</span><p>DGX Spark memory reclaim</p></div>
+                  <div class="terminal-card"><span>03 / OPEN SOURCE</span><p>Marian NMT</p></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="slide" aria-label="Blueprint, engineered clarity">
+            <div class="concept-frame blueprint">
+              <nav class="concept-nav">
+                <div class="concept-logo">MJD / SYSTEMS</div>
+                <ul><li>01 Notes</li><li>02 Work</li><li>03 Papers</li></ul>
+              </nav>
+              <div class="concept-content">
+                <div>
+                  <div class="concept-kicker">Drawing 001 / Revision A</div>
+                  <h1>Designing useful<br /><span>machine intelligence.</span></h1>
+                </div>
+                <div class="diagram"><span>MODEL<br />SYSTEM<br />HARDWARE</span></div>
+              </div>
+              <div class="concept-bottom">
+                <p>FIELD / MACHINE TRANSLATION</p>
+                <p>METHOD / OPEN ENGINEERING</p>
+                <p>LOCATION / REDMOND, WA</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="slide" aria-label="Margin, quiet minimal">
+            <div class="concept-frame quiet">
+              <nav class="concept-nav">
+                <div class="concept-logo">Marcin Junczys-Dowmunt</div>
+                <ul><li>Essays</li><li>Work</li><li>Publications</li></ul>
+              </nav>
+              <div class="concept-content">
+                <div class="concept-kicker">Research &amp; engineering</div>
+                <h1>Make complex systems<br /><em>clear and useful.</em></h1>
+                <p>Notes on machine translation, efficient inference, open-source software, and the hardware that makes it run.</p>
+                <div class="concept-bottom">
+                  <a>Read the journal</a>
+                  <a>Browse selected work</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="slide" aria-label="Signal, bold geometric">
+            <div class="concept-frame signal">
+              <nav class="concept-nav">
+                <div class="concept-logo">MJD / SIGNAL</div>
+                <ul><li>Work</li><li>Writing</li><li>Research</li></ul>
+              </nav>
+              <div class="concept-content">
+                <div class="concept-kicker">Machine learning systems</div>
+                <h1>Ideas into<br /><span>working systems.</span></h1>
+                <div class="concept-bottom">
+                  <p>Research and open engineering across language models, inference, and hardware.</p>
+                  <a class="concept-cta">Enter the work &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="slide" aria-label="Press, technical newspaper">
+            <div class="concept-frame press">
+              <header class="masthead">
+                <small>Redmond, Washington</small>
+                <strong>The Systems Journal</strong>
+                <small>Research edition</small>
+              </header>
+              <nav class="press-nav">
+                <span>Machine translation</span><span>Inference</span><span>Open source</span>
+              </nav>
+              <div class="concept-content">
+                <article class="lead-story">
+                  <div class="concept-kicker">Today's lead / Field report</div>
+                  <h1>Making machine learning work in the real world</h1>
+                  <p class="deck">Marcin Junczys-Dowmunt writes about the models, software, and hardware behind production language systems.</p>
+                </article>
+                <aside class="press-side">
+                  <article><span>Systems</span><h2>Recovering 4.1 GiB on DGX Spark</h2></article>
+                  <article><span>Open source</span><h2>Building fast translation with Marian</h2></article>
+                  <article><span>Research</span><h2>Selected papers and experiments</h2></article>
+                </aside>
+              </div>
+            </div>
+          </section>
+
+          <section class="slide" aria-label="Prism, luminous glass">
+            <div class="concept-frame prism">
+              <nav class="concept-nav">
+                <div class="concept-logo">MJD<span style="color:#8feeff">.</span></div>
+                <ul><li>Notes</li><li>Projects</li><li>Publications</li></ul>
+              </nav>
+              <div class="concept-content">
+                <div class="concept-kicker">RESEARCH / ENGINEERING / SYSTEMS</div>
+                <h1>From neural models to <span>real machines.</span></h1>
+                <div class="concept-bottom">
+                  <p>Exploring machine translation, efficient inference, and open systems engineering.</p>
+                  <a class="concept-cta">Explore the work &nearr;</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="slide" aria-label="Archive, museum catalog">
+            <div class="concept-frame archive">
+              <nav class="concept-nav">
+                <div class="concept-logo">Marcin Junczys-Dowmunt</div>
+                <ul><li>Collection</li><li>Essays</li><li>Bibliography</li></ul>
+              </nav>
+              <div class="concept-content">
+                <aside class="accession">
+                  <span>Collection 09</span>
+                  Language systems<br />
+                  2007—present<br />
+                  Digital archive
+                </aside>
+                <div>
+                  <div class="concept-kicker">Selected research and technical work</div>
+                  <h1>An evolving collection of language systems.</h1>
+                  <p class="archive-description">Machine translation research, open-source software, and close studies of the computing systems underneath.</p>
+                  <div class="concept-bottom">
+                    <span>68 publications</span><span>Open-source projects</span><span>Technical field notes</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="slide" aria-label="Raw, monochrome brutalist">
+            <div class="concept-frame brutalist">
+              <nav class="concept-nav">
+                <div class="concept-logo">MARCIN J-D</div>
+                <ul><li>[BLOG]</li><li>[PROJECTS]</li><li>[PAPERS]</li></ul>
+              </nav>
+              <div class="concept-content">
+                <div class="concept-kicker">NO DECORATION. JUST WORK.</div>
+                <h1>Machine learning<br /><span>from code to metal.</span></h1>
+                <div class="concept-bottom">
+                  <p>RESEARCH SCIENTIST. OPEN-SOURCE ENGINEER. MACHINE TRANSLATION, INFERENCE, SYSTEMS.</p>
+                  <a class="concept-cta">VIEW EVERYTHING →</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <footer class="lab-controls">
+        <div class="arrow-group">
+          <button class="arrow previous" type="button" aria-label="Previous concept">&larr;</button>
+          <button class="arrow next" type="button" aria-label="Next concept">&rarr;</button>
+        </div>
+        <div class="concept-tabs" role="tablist" aria-label="Choose a design concept">
+          {
+            concepts.map((concept, index) => (
+              <button
+                class="concept-tab"
+                type="button"
+                role="tab"
+                aria-selected={index === 0 ? "true" : "false"}
+                data-index={index}
+                data-id={concept.id}
+              >
+                {concept.number} <span>{concept.name}</span>
+              </button>
+            ))
+          }
+        </div>
+        <span class="lab-hint">Arrow keys to compare</span>
+      </footer>
+    </main>
+
+    <script>
+      const track = document.querySelector<HTMLElement>(".track");
+      const carousel = document.querySelector<HTMLElement>(".carousel");
+      const slides = Array.from(document.querySelectorAll<HTMLElement>(".slide"));
+      const tabs = Array.from(document.querySelectorAll<HTMLButtonElement>(".concept-tab"));
+      const position = document.querySelector<HTMLElement>(".lab-position");
+      let active = 0;
+      let touchStart = 0;
+
+      function show(index: number) {
+        active = (index + slides.length) % slides.length;
+        if (track && carousel) {
+          track.style.transform = `translate3d(-${active * track.clientWidth}px, 0, 0)`;
+        }
+        tabs.forEach((tab, tabIndex) => {
+          tab.setAttribute("aria-selected", String(tabIndex === active));
+        });
+        slides.forEach((slide, slideIndex) => {
+          slide.setAttribute("aria-hidden", String(slideIndex !== active));
+        });
+        if (position) {
+          position.textContent = `${String(active + 1).padStart(2, "0")} / ${String(slides.length).padStart(2, "0")}`;
+        }
+        const id = tabs[active]?.dataset.id;
+        if (id) history.replaceState(null, "", `#${id}`);
+      }
+
+      document.querySelector(".previous")?.addEventListener("click", () => show(active - 1));
+      document.querySelector(".next")?.addEventListener("click", () => show(active + 1));
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => show(Number(tab.dataset.index)));
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") show(active - 1);
+        if (event.key === "ArrowRight") show(active + 1);
+      });
+      track?.addEventListener("touchstart", (event) => {
+        touchStart = event.changedTouches[0]?.clientX ?? 0;
+      }, { passive: true });
+      track?.addEventListener("touchend", (event) => {
+        const distance = (event.changedTouches[0]?.clientX ?? 0) - touchStart;
+        if (Math.abs(distance) > 50) show(active + (distance < 0 ? 1 : -1));
+      }, { passive: true });
+      window.addEventListener("resize", () => show(active));
+      const requested = tabs.findIndex((tab) => tab.dataset.id === location.hash.slice(1));
+      show(requested >= 0 ? requested : 0);
+    </script>
+  </body>
+</html>
