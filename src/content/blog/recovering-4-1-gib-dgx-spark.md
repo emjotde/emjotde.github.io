@@ -18,7 +18,7 @@ This post is wordy. If you want to get things done immediately, the code and com
 
 ---
 
-DGX Spark has 128 GB of unified physical memory, but Linux exposes noticeably less than that.
+DGX Spark has a nominal 128 GiB of unified physical memory, marketed by NVIDIA as 128 GB, but Linux exposes noticeably less than that.
 
 There are two known ways to get a substantial part of it back. First, DGX Spark can run a **64 KiB kernel**, which greatly reduces the amount of `vmemmap` metadata needed to describe physical memory ([NVIDIA DGX OS documentation](https://docs.nvidia.com/dgx/dgx-os-7-user-guide/installing_on_ubuntu.html), [Linux kernel documentation](https://docs.kernel.org/mm/vmemmap_dedup.html)). Second, on a headless GB10, the **2,046 MiB display reservation** can be reclaimed into ordinary Linux RAM ([NVIDIA forum](https://forums.developer.nvidia.com/t/reclaim-2gib-of-ram-on-headless-sparks/384621)).
 
@@ -318,7 +318,7 @@ My final `MemTotal` is:
 131,893,888 KiB
 ```
 
-Pretty close to getting the full advertised 128 GB into Linux.
+Pretty close to getting the full nominal 128 GiB into Linux.
 
 ## Gotcha: I reserved another 2.125 GiB myself
 
