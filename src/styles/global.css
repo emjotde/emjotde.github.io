@@ -472,6 +472,14 @@ svg {
   padding-block: 24px 100px;
 }
 
+.project-group-title {
+  margin: 56px 0 8px;
+  color: var(--ink-soft);
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 500;
+}
+
 .project-row {
   display: grid;
   padding-block: 35px;
