@@ -1,6 +1,7 @@
 ---
 title: "Recovering 4.1 GiB of RAM on NVIDIA DGX Spark"
 description: "Wouldn't you like your KV pool to grow from 262,144 to 937,984 tokens—3.58× the capacity—with about 4 GiB more memory per host?"
+image: "/img/dgx-spark-memory-social.png"
 published: 2026-10-01
 tags:
   - NVIDIA DGX Spark
