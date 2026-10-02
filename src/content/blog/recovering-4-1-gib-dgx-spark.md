@@ -15,7 +15,7 @@ This post is wordy. If you want to get things done immediately, the code and com
 
 DGX Spark has 128 GB of unified physical memory, but Linux exposes noticeably less than that.
 
-There are two known ways to get a substantial part of it back. First, DGX Spark can run a **64 KiB kernel**, which greatly reduces the amount of `vmemmap` metadata needed to describe physical memory ([NVIDIA forum](https://forums.developer.nvidia.com/t/dgx-spark-64k-kernels/355883), [Linux kernel documentation](https://docs.kernel.org/mm/vmemmap_dedup.html)). Second, on a headless GB10, the **2,046 MiB display reservation** can be reclaimed into ordinary Linux RAM ([NVIDIA forum](https://forums.developer.nvidia.com/t/reclaim-2gib-of-ram-on-headless-sparks/384621)).
+There are two known ways to get a substantial part of it back. First, DGX Spark can run a **64 KiB kernel**, which greatly reduces the amount of `vmemmap` metadata needed to describe physical memory ([NVIDIA DGX OS documentation](https://docs.nvidia.com/dgx/dgx-os-7-user-guide/installing_on_ubuntu.html), [Linux kernel documentation](https://docs.kernel.org/mm/vmemmap_dedup.html)). Second, on a headless GB10, the **2,046 MiB display reservation** can be reclaimed into ordinary Linux RAM ([NVIDIA forum](https://forums.developer.nvidia.com/t/reclaim-2gib-of-ram-on-headless-sparks/384621)).
 
 I am writing this because I haven't found these two methods used together. The existing work I found covers either the 64 KiB kernel or reclaiming the display carveout. On my machines the first recovered **2.098 GiB**, the second **2,046 MiB**, for a combined **4.096 GiB of additional normal application memory per Spark**.
 
