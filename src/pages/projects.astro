@@ -1,0 +1,111 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const projects = [
+  {
+    name: "Marian",
+    kind: "Neural machine translation",
+    description:
+      "An efficient C++ framework for neural machine translation and other sequence-to-sequence tasks.",
+    href: "https://github.com/marian-nmt/marian",
+    status: "Open source",
+  },
+  {
+    name: "Spark RAM Reclaim",
+    kind: "Linux / GPU systems",
+    description:
+      "Kernel and driver tooling that returns a headless DGX Spark's 2046 MiB display reservation to ordinary Linux RAM.",
+    href: "https://github.com/emjotde/spark-ram-reclaim",
+    status: "Experimental",
+  },
+  {
+    name: "AmuNMT",
+    kind: "Neural inference",
+    description:
+      "A fast GPU inference engine for attention-based neural machine translation models.",
+    href: "https://github.com/emjotde/amunmt",
+    status: "Archive",
+  },
+  {
+    name: "SyMGIZA++",
+    kind: "Word alignment",
+    description:
+      "Symmetrized word-alignment models built to improve alignment quality over MGIZA++.",
+    href: "https://github.com/emjotde/symgiza-pp",
+    status: "Open source",
+  },
+  {
+    name: "AlignEd",
+    kind: "Research tooling",
+    description:
+      "A graphical editor and visualization tool for inspecting and correcting word alignments.",
+    href: "https://github.com/emjotde/AlignEd",
+    status: "Open source",
+  },
+  {
+    name: "BLEU-Champ",
+    kind: "Corpus tooling",
+    description:
+      "A monolingual sentence aligner based on BLEU-2 for building and cleaning corpora.",
+    href: "https://github.com/emjotde/bleu-champ",
+    status: "Open source",
+  },
+  {
+    name: "CompactPT",
+    kind: "Statistical MT",
+    description:
+      "A compact, high-performance phrase table implementation for the Moses translation toolkit.",
+    href: "/projects/compactpt/",
+    status: "Research archive",
+  },
+];
+---
+
+<BaseLayout
+  title="Projects"
+  description="Selected open-source software and research projects by Marcin Junczys-Dowmunt."
+>
+  <header class="page-header shell">
+    <div class="eyebrow">$ ls projects/</div>
+    <h1>Projects</h1>
+    <p>
+      Open-source software and research projects.
+    </p>
+  </header>
+  <section class="shell project-list">
+    {
+      projects.map((project, index) => (
+        <a class="project-row" href={project.href}>
+          <span class="project-number">
+            {String(index + 1).padStart(2, "0")}
+          </span>
+          <div>
+            <span class="project-kind">{project.kind}</span>
+            <h2>{project.name}</h2>
+          </div>
+          <p>{project.description}</p>
+          <span class="project-status">{project.status}</span>
+          <span class="project-arrow" aria-hidden="true">
+            &nearr;
+          </span>
+        </a>
+      ))
+    }
+  </section>
+  <section class="shell resource-section">
+    <div class="section-heading">
+      <span class="section-number">Data</span>
+      <h2>Language resources</h2>
+    </div>
+    <div class="resource-grid">
+      <a href="https://conferences.unite.un.org/UNCorpus">
+        <h3>United Nations Parallel Corpus v1.0</h3>
+        <p>A six-language parallel corpus released by the United Nations.</p>
+      </a>
+      <a href="https://www.wipo.int/patentscope/en/data/">
+        <h3>COPPA V2</h3>
+        <p>The WIPO Corpus of Parallel Patent Applications.</p>
+      </a>
+    </div>
+  </section>
+</BaseLayout>

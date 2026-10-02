@@ -1,0 +1,120 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import publications from "../data/publications.json";
+
+const scholarProfile =
+  "https://scholar.google.com/citations?user=Uh_GH14AAAAJ&hl=en";
+
+const profiles = [
+  { name: "Google Scholar", href: scholarProfile },
+  {
+    name: "ACL Anthology",
+    href: "https://aclanthology.org/people/marcin-junczys-dowmunt/",
+  },
+  {
+    name: "Semantic Scholar",
+    href: "https://www.semanticscholar.org/author/Marcin-Junczys-Dowmunt/1733933",
+  },
+  {
+    name: "arXiv",
+    href: "https://arxiv.org/search/?searchtype=author&query=Junczys-Dowmunt%2C+M",
+  },
+];
+
+const grouped = Object.entries(
+  publications
+    .filter((publication) => publication.year)
+    .reduce<Record<string, typeof publications>>((years, publication) => {
+      (years[publication.year] ??= []).push(publication);
+      return years;
+    }, {}),
+).sort(([a], [b]) => Number(b) - Number(a));
+
+---
+
+<BaseLayout
+  title="Publications"
+  description="Publications by Marcin Junczys-Dowmunt on machine translation, grammatical error correction, and language technology."
+>
+  <header class="page-header shell publications-header">
+    <div>
+      <div class="eyebrow">$ ls publications/</div>
+      <h1>Publications</h1>
+      <p>
+        Papers on machine translation, grammatical error correction,
+        evaluation, and language technology.
+      </p>
+    </div>
+  </header>
+
+  <nav class="profile-band" aria-label="Publication profiles">
+    <div class="shell profile-links">
+      <span>Research profiles</span>
+      {
+        profiles.map((profile) => (
+          <a href={profile.href}>
+            {profile.name} <span aria-hidden="true">&nearr;</span>
+          </a>
+        ))
+      }
+    </div>
+  </nav>
+
+  <section class="shell publication-catalog">
+    {
+      grouped.map(([year, items]) => (
+        <section class="publication-year-group" aria-labelledby={`year-${year}`}>
+          <header>
+            <h2 id={`year-${year}`}>{year}</h2>
+            <span>{items.length} {items.length === 1 ? "work" : "works"}</span>
+          </header>
+          <div>
+            {items.map((publication) => (
+              <article class="publication">
+                <div>
+                  <h3>
+                    <a href={publication.href}>{publication.title}</a>
+                  </h3>
+                  <p class="publication-authors">{publication.authors}</p>
+                  <p class="publication-venue">{publication.venue}</p>
+                </div>
+                <a
+                  class="publication-link"
+                  href={publication.href}
+                  aria-label={`View ${publication.title} on Google Scholar`}
+                >
+                  &nearr;
+                </a>
+              </article>
+            ))}
+          </div>
+        </section>
+      ))
+    }
+  </section>
+
+  <section class="archive-band">
+    <div class="shell archive-inner">
+      <div>
+        <span class="eyebrow">Publication data</span>
+        <h2>Profiles and archive</h2>
+        <p>
+          Google Scholar has the current citation record. ACL Anthology provides
+          stable papers and BibTeX for most language-technology publications.
+        </p>
+      </div>
+      <div class="archive-links">
+        <a class="button-link" href={scholarProfile}>Google Scholar</a>
+        <a
+          class="text-link"
+          href="https://aclanthology.org/people/marcin-junczys-dowmunt/"
+        >
+          ACL Anthology <span aria-hidden="true">&nearr;</span>
+        </a>
+        <a class="text-link" href="/publications/publications.bib">
+          Legacy BibTeX <span aria-hidden="true">&darr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
