@@ -317,19 +317,11 @@ My final `MemTotal` is:
 
 Pretty close to getting the full advertised 128 GiB into Linux.
 
-## Gotcha: kdump reserves another 2.125 GiB
+## Gotcha: I reserved another 2.125 GiB myself
 
-I had enabled `kdump` while investigating unexplained Spark hard power-offs. If the running kernel panics, `kdump` boots a small second kernel and uses it to save the failed kernel's memory as a crash dump. That recovery kernel needs memory that the main kernel cannot touch, so Linux reserves it at boot instead of making it available to applications.
+This one was self-inflicted. I had enabled `kdump` while investigating unexplained Spark hard power-offs. Its `crashkernel=2G` setting held back **2 GiB high plus 128 MiB low** so a second kernel could save a crash dump after a panic.
 
-My kernel command line contained:
-
-```text
-crashkernel=2G
-```
-
-On these ARM64 systems that produced a **2 GiB high reservation** plus a **128 MiB low reservation**, removing **2.125 GiB** from normal Linux memory. No process was actively using it: the memory was simply kept outside the normal allocator in case the crash kernel needed it.
-
-Once I no longer needed kernel crash dumps, I disabled `kdump` and removed the reservation. This gain is separate from the 64 KiB kernel and display reclaim, so it is not included in the **4.096 GiB** result above.
+Disabling `kdump` recovered the full **2.125 GiB**. This is separate from the 64 KiB kernel and display reclaim, so it is not included in the **4.096 GiB** result above.
 
 My full progression was:
 
